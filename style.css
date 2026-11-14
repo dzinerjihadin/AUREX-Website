@@ -1,0 +1,1400 @@
+/* ==========================================================================
+   AUREX - Premium High-Performance Video Production & Creative Systems
+   Design System & Styling
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap');
+
+:root {
+  /* Core Obsidian Dark Spectrum (Pitch Minimalist Black) */
+  --bg-black: #000000;
+  --bg-void: #000000;
+  --bg-dark-900: #050507;
+  --bg-dark-850: #08080b;
+  --bg-dark-800: #0c0c10;
+  --bg-dark-700: #121217;
+  --bg-card: rgba(12, 12, 16, 0.88);
+  --bg-card-hover: rgba(20, 20, 26, 0.95);
+
+  /* AUREX Official Typography & Brand Colors (Hero Section Coral & White) */
+  --coral-aurex: #FA6352;
+  --coral-bright: #FF7160;
+  --coral-deep: #E04B39;
+  --coral-glow: rgba(250, 99, 82, 0.5);
+
+  /* Secondary Technical Accents from Hero Presence Bar */
+  --accent-emerald: #34D399;
+  --accent-sky: #38BDF8;
+
+  /* Cyber White & Grid Accents */
+  --text-white: #ffffff;
+  --text-gray-200: #e2e8f0;
+  --text-gray-300: #cbd5e1;
+  --text-gray-400: #94a3b8;
+  --text-gray-500: #64748b;
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-medium: rgba(255, 255, 255, 0.20);
+  --border-bright: rgba(255, 255, 255, 0.85);
+
+  /* Typography - Unified to Montserrat & JetBrains Mono */
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Base Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  background-color: var(--bg-black);
+  color: var(--text-gray-200);
+  overflow-x: clip;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000000;
+  background-image: 
+    radial-gradient(ellipse 90% 50% at 50% 0%, rgba(250, 99, 82, 0.08), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 90% 40%, rgba(250, 99, 82, 0.04), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 10% 75%, rgba(250, 99, 82, 0.05), transparent 60%);
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--coral-aurex);
+  color: #ffffff;
+}
+
+/* Noise & Cyber Grid Textures */
+.bg-noise {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.bg-cyber-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.bg-ambient-aura {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.aura-left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  background: radial-gradient(ellipse at left, rgba(250, 99, 82, 0.06) 0%, transparent 75%);
+}
+
+.aura-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 550px;
+  background: radial-gradient(ellipse at right, rgba(250, 99, 82, 0.06) 0%, transparent 75%);
+}
+
+/* Typography Helpers */
+.font-display { font-family: var(--font-display); }
+.font-heading { font-family: var(--font-heading); }
+.font-mono { font-family: var(--font-mono); }
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4.6vw, 4.75rem) !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.025em !important;
+  font-weight: 800 !important;
+}
+
+.gradient-text-coral,
+.gradient-text-gold-violet,
+.gradient-text-violet-cyan,
+.gradient-text-solar {
+  background: linear-gradient(135deg, #ffffff 0%, #FA6352 65%, #ff7160 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   AUREX XOT-STYLE INTRO HERO & MONUMENTAL TYPOGRAPHY
+   ========================================================================== */
+
+.aurex-xot-hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  /* Dark obsidian & burnt orange fallback gradient */
+  background-image: 
+    radial-gradient(ellipse at 60% 45%, rgba(180, 55, 12, 0.28) 0%, rgba(60, 15, 4, 0.35) 45%, #000000 85%);
+  padding: 0 1.25rem 2rem 1.25rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Liquid Silk Flowing Canvas (Sreedesigns.com style) */
+.hero-silk-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+/* Liquid Silk Vignette & Bottom Blending Overlay */
+.hero-silk-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background: 
+    radial-gradient(ellipse 90% 70% at 50% 50%, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.45) 60%, rgba(0, 0, 0, 0.88) 100%),
+    linear-gradient(to bottom, 
+      rgba(0, 0, 0, 0.70) 0%, 
+      rgba(0, 0, 0, 0.15) 20%, 
+      transparent 50%, 
+      rgba(0, 0, 0, 0.35) 75%, 
+      rgba(0, 0, 0, 0.85) 92%, 
+      #000000 100%
+    );
+}
+
+@media (min-width: 640px) {
+  .aurex-xot-hero {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aurex-xot-hero {
+    padding: 0 4rem 3rem 4rem;
+  }
+}
+
+/* AUREX Header Wordmark Typography (Exact match to brand identity card) */
+.aurex-nav-wordmark {
+  font-family: 'Montserrat', 'Space Grotesk', -apple-system, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #FA6352;
+  line-height: 1;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 640px) {
+  .aurex-nav-wordmark {
+    font-size: 1.2rem;
+    letter-spacing: 0.18em;
+  }
+}
+
+.group:hover .aurex-nav-wordmark {
+  color: #ffffff;
+  text-shadow: 0 0 16px rgba(250, 99, 82, 0.85);
+}
+
+/* XOT Minimalist Contact Pill Button - Silky Anti-Aliased Border */
+.btn-xot-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 12px rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-family: 'Montserrat', var(--font-body), sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+@media (min-width: 640px) {
+  .btn-xot-contact {
+    height: 36px;
+    padding: 0 1.35rem;
+  }
+}
+
+.btn-xot-contact:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.75);
+  transform: translateY(-1px);
+}
+
+/* Hero Pill Button - Smooth Glowing Anti-Aliased Border */
+.hero-top-pill {
+  border-radius: 9999px;
+  border: 1px solid rgba(250, 99, 82, 0.45);
+  box-shadow: 0 0 16px rgba(250, 99, 82, 0.22), inset 0 0 10px rgba(250, 99, 82, 0.08);
+  background: rgba(14, 7, 7, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-top-pill:hover {
+  border-color: #FA6352;
+  box-shadow: 0 0 28px rgba(250, 99, 82, 0.5), inset 0 0 16px rgba(250, 99, 82, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Minimalist Menu Circle Button */
+.btn-nav-menu-circle {
+  width: 34px;
+  height: 34px;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  z-index: 1000010;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 640px) {
+  .btn-nav-menu-circle {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.btn-nav-menu-circle:hover {
+  transform: scale(1.06);
+}
+
+.btn-nav-menu-circle:active {
+  transform: scale(0.95);
+}
+
+/* SVG Elements inside button - True Vector Smoothness */
+.btn-nav-menu-circle .menu-circle-stroke {
+  transition: stroke 0.2s ease, fill 0.2s ease, filter 0.2s ease;
+}
+
+.btn-nav-menu-circle .menu-bar-rect,
+.btn-nav-menu-circle .close-bar-line {
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+.btn-nav-menu-circle:hover .menu-circle-stroke,
+.btn-nav-menu-circle.is-active .menu-circle-stroke {
+  stroke: #FA6352;
+  fill: rgba(250, 99, 82, 0.14);
+  filter: drop-shadow(0 0 10px rgba(250, 99, 82, 0.55));
+}
+
+.btn-nav-menu-circle:hover .menu-bar-rect,
+.btn-nav-menu-circle.is-active .menu-bar-rect {
+  fill: #FA6352;
+}
+
+.btn-nav-menu-circle:hover .close-bar-line,
+.btn-nav-menu-circle.is-active .close-bar-line {
+  stroke: #FA6352;
+}
+
+/* ==========================================================================
+   AUREX RIGHT SLIDE-OUT OPTIONS TAB / DRAWER
+   ========================================================================== */
+
+.options-drawer-backdrop {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  background: rgba(0, 0, 0, 0.72) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  z-index: 1000002 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.options-drawer-backdrop.open {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.options-drawer {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  width: 100% !important;
+  max-width: 420px !important;
+  background: rgba(8, 6, 12, 0.98) !important;
+  backdrop-filter: blur(28px) !important;
+  -webkit-backdrop-filter: blur(28px) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: -20px 0 70px rgba(0, 0, 0, 0.95), -5px 0 30px rgba(250, 99, 82, 0.2) !important;
+  z-index: 1000005 !important;
+  transform: translateX(100%) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 2.25rem 2rem 2rem 2rem !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+}
+
+.options-drawer.open {
+  transform: translateX(0%) !important;
+}
+
+/* Options Drawer Close Button - Coral Circle & Cross matching Brand Style */
+#closeDrawerBtn {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  border: 1.5px solid #FA6352 !important;
+  background: rgba(250, 99, 82, 0.12) !important;
+  color: #FA6352 !important;
+  box-shadow: 0 0 12px rgba(250, 99, 82, 0.45) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+#closeDrawerBtn svg {
+  stroke: #FA6352 !important;
+  transition: stroke 0.2s ease !important;
+}
+
+#closeDrawerBtn:hover {
+  border-color: #FA6352 !important;
+  background: rgba(250, 99, 82, 0.28) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(250, 99, 82, 0.8) !important;
+  transform: scale(1.08) !important;
+}
+
+#closeDrawerBtn:hover svg {
+  stroke: #ffffff !important;
+}
+
+#closeDrawerBtn:active {
+  transform: scale(0.94) !important;
+}
+
+/* Options Drawer Nav Link Styling */
+.drawer-option-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.2vh, 1.35rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #e2e8f0;
+  background: transparent;
+  border-radius: 6px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.drawer-option-link:hover {
+  color: #FA6352;
+  background: rgba(250, 99, 82, 0.1);
+  transform: scale(1.05);
+  text-shadow: 0 0 20px rgba(250, 99, 82, 0.55);
+}
+
+@keyframes modalPopIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Monumental Center Block (parthh.in layout) */
+.aurex-xot-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: auto 0;
+  padding: 0;
+  user-select: none;
+}
+
+/* Name Container (GSAP interactive letter-spacing and entrance) */
+.name-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  will-change: transform, opacity, letter-spacing;
+  transition: letter-spacing 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Spinning Conic Border (parthh.in top pill) */
+@keyframes spinBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-border {
+  animation: spinBorder 5s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.tagline-part {
+  will-change: transform, opacity, filter;
+}
+
+/* Center Emblem Floating Animation */
+.aurex-emblem-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aurex-emblem-badge:hover {
+  transform: scale(1.08) translateY(-4px);
+}
+
+/* AUREX Monumental Display Typography (Matching Image 2 Layout & Image 3 Typography) */
+.aurex-giant-title {
+  font-family: 'Montserrat', 'Space Grotesk', -apple-system, sans-serif !important;
+  font-size: clamp(3.75rem, 18.5vw, 17.5rem) !important;
+  font-weight: 900 !important;
+  line-height: 0.82 !important;
+  letter-spacing: inherit !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.12);
+  transform: scaleY(1.02);
+}
+
+.aurex-giant-subtitle {
+  font-family: 'Montserrat', 'Space Grotesk', -apple-system, sans-serif !important;
+  font-size: clamp(3.75rem, 18.5vw, 17.5rem) !important;
+  font-weight: 900 !important;
+  line-height: 0.82 !important;
+  letter-spacing: inherit !important;
+  color: #FA6352 !important;
+  text-transform: uppercase !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+  background: linear-gradient(180deg, #ff7b6b 0%, #FA6352 65%, #df4836 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 35px rgba(250, 99, 82, 0.45));
+  transform: scaleY(1.02);
+}
+
+/* Bottom Global Presence Bar (parthh.in 3-pillar layout) */
+.aurex-xot-bottom {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.xot-pillar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-mono);
+  font-size: clamp(0.65rem, 0.85vw, 0.75rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  transition: color 0.25s ease;
+}
+
+.xot-pillar-item:hover {
+  color: #ffffff;
+}
+
+/* Sharp Cyber Buttons */
+.aurex-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.85rem;
+  border-radius: 0px !important;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.aurex-btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.35), 0 0 45px rgba(250, 99, 82, 0.25);
+}
+
+.aurex-btn-primary:hover {
+  background-color: #FA6352;
+  color: #ffffff;
+  border-color: #FA6352;
+  box-shadow: 0 0 35px rgba(250, 99, 82, 0.8), 0 0 60px rgba(250, 99, 82, 0.4);
+  transform: translateY(-2px);
+}
+
+.aurex-btn-secondary {
+  background: rgba(12, 12, 16, 0.8);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+.aurex-btn-secondary:hover {
+  border-color: #FA6352;
+  color: #FA6352;
+  background: rgba(20, 20, 26, 0.95);
+  box-shadow: 0 0 30px rgba(250, 99, 82, 0.35);
+  transform: translateY(-2px);
+}
+
+.aurex-btn-solar {
+  background: #FA6352;
+  color: #ffffff;
+  border: 2px solid #FA6352;
+  box-shadow: 0 0 25px rgba(250, 99, 82, 0.45);
+}
+
+.aurex-btn-solar:hover {
+  background: #ff7160;
+  border-color: #ff7160;
+  box-shadow: 0 0 40px rgba(250, 99, 82, 0.8);
+  transform: translateY(-2px);
+}
+
+.aurex-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 0px !important;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.aurex-btn-primary .aurex-btn-icon {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.aurex-btn-secondary .aurex-btn-icon {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.aurex-btn:hover .aurex-btn-icon {
+  transform: translate(3px, -3px) scale(1.1);
+}
+
+/* Immersive 3D Spotlight Cards */
+.immersive-card {
+  position: relative;
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid var(--border-medium);
+  border-radius: 0px !important;
+  overflow: hidden;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.25s ease-out;
+  transform-style: preserve-3d;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.95);
+}
+
+.immersive-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(250, 99, 82, 0.15), transparent 75%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.immersive-card:hover::before {
+  opacity: 1;
+}
+
+.immersive-card:hover {
+  border-color: #FA6352 !important;
+  box-shadow: 0 25px 65px -15px rgba(0, 0, 0, 0.98), 0 0 35px rgba(250, 99, 82, 0.35);
+}
+
+/* Cyber HUD Corner Brackets */
+.hud-corner-tl, .hud-corner-br {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  pointer-events: none;
+  opacity: 0.4;
+  transition: opacity 0.3s ease, border-color 0.3s ease, filter 0.3s ease;
+  z-index: 5;
+}
+
+.hud-corner-tl {
+  top: 10px;
+  left: 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+  border-left: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.hud-corner-br {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.immersive-card:hover .hud-corner-tl,
+.immersive-card:hover .hud-corner-br,
+#orderFormCard:hover .hud-corner-tl,
+#orderFormCard:hover .hud-corner-br {
+  opacity: 1;
+  border-color: #FA6352;
+  filter: drop-shadow(0 0 8px rgba(250, 99, 82, 0.9));
+}
+
+/* Order Form Card & Service Selection Hover Glowing Borders */
+#orderFormCard {
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+#orderFormCard:hover {
+  border-color: #FA6352 !important;
+  box-shadow: 0 0 45px rgba(250, 99, 82, 0.35), 0 25px 65px -15px rgba(0, 0, 0, 0.98) !important;
+}
+
+.service-checkbox-card {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem;
+  border-radius: 0px !important;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.service-checkbox-card:hover {
+  border-color: #FA6352 !important;
+  background: rgba(250, 99, 82, 0.08) !important;
+  box-shadow: 0 0 25px rgba(250, 99, 82, 0.35) !important;
+  color: #ffffff !important;
+}
+
+.service-checkbox-card:has(input:checked) {
+  border-color: rgba(250, 99, 82, 0.55);
+  background: rgba(250, 99, 82, 0.05);
+  color: #ffffff;
+}
+
+.service-checkbox-card:has(input:checked):hover {
+  border-color: #FA6352 !important;
+  background: rgba(250, 99, 82, 0.12) !important;
+  box-shadow: 0 0 30px rgba(250, 99, 82, 0.45) !important;
+}
+
+/* Infinite Brand Marquee & Sliding Reviews */
+@keyframes marqueeLeft {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes marqueeRight {
+  0% { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.marquee-fade-mask {
+  mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 32s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Dual Sliding Reviews (Left-to-Right & Right-to-Left like parthh.in) */
+.marquee-track-left {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 38s linear infinite;
+  animation-play-state: running !important;
+  will-change: transform;
+}
+
+.marquee-track-right {
+  display: flex;
+  width: max-content;
+  animation: marqueeRight 42s linear infinite;
+  animation-play-state: running !important;
+  will-change: transform;
+}
+
+/* Do not stop or pause slider on hover */
+.marquee-track-left:hover,
+.marquee-track-right:hover,
+.partner-review-card:hover,
+.reviews-marquee-container:hover {
+  animation-play-state: running !important;
+}
+
+/* Legacy support */
+.animate-reviews {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 42s linear infinite;
+  will-change: transform;
+}
+
+.animate-reviews:hover {
+  animation-play-state: running !important;
+}
+
+/* Premium Partner Review Cards (parthh.in inspired modern cyber aesthetic) */
+.partner-review-card {
+  width: 320px;
+  background: rgba(8, 8, 12, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, border-color, box-shadow;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .partner-review-card {
+    width: 380px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partner-review-card {
+    width: 420px;
+  }
+}
+
+.partner-review-card:hover {
+  border-color: rgba(250, 99, 82, 0.7);
+  box-shadow: 0 12px 36px -8px rgba(250, 99, 82, 0.28), 0 0 0 1px rgba(250, 99, 82, 0.4);
+  transform: translateY(-4px);
+  z-index: 10;
+}
+
+.partner-review-card .quote-bubble {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-family: 'Montserrat', sans-serif !important;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.partner-review-card .quote-bubble p {
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: -0.01em;
+}
+
+.partner-review-card:hover .quote-bubble {
+  border-color: rgba(250, 99, 82, 0.2);
+  background: rgba(250, 99, 82, 0.03);
+}
+
+/* Scanner Beam Pulse */
+@keyframes scanSweep {
+  0% { top: -100%; opacity: 0; }
+  25% { opacity: 0.9; }
+  75% { opacity: 0.9; }
+  100% { top: 160%; opacity: 0; }
+}
+
+.scanner-beam-sweep {
+  animation: scanSweep 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+/* Interactive Before / After Comparison Slider */
+.ba-slider-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  user-select: none;
+  cursor: ew-resize;
+  background-color: #000000;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.ba-slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.ba-slider-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
+  z-index: 2;
+  border-right: 2px solid #ffffff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+.ba-slider-before .ba-slider-image {
+  width: 100%;
+  height: 100%;
+  /* Fix image aspect scaling within clipped container */
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 0px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9), 0 0 50px rgba(250, 99, 82, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: ew-resize;
+  border: 2px solid #000000;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ba-handle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 1), 0 0 70px rgba(250, 99, 82, 0.7);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(250, 99, 82, 0.35);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--coral-aurex);
+}
+
+/* Video Player Overlay Button */
+.play-btn-cyber {
+  width: 52px;
+  height: 52px;
+  background: rgba(8, 8, 11, 0.85);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+}
+
+.play-btn-cyber:hover,
+.group:hover .play-btn-cyber {
+  transform: scale(1.12);
+  border-color: #FA6352;
+  background: rgba(14, 14, 18, 0.95);
+  color: #FA6352;
+  box-shadow: 0 0 35px rgba(250, 99, 82, 0.6);
+}
+
+/* Category Filter Tabs Active Style */
+.tabs-scroll-wrap {
+  width: 100%;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start !important;
+  justify-content: safe center !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-sizing: border-box;
+  padding: 4px 1rem 14px 1rem !important;
+}
+
+.tabs-scroll-wrap::-webkit-scrollbar {
+  display: none !important;
+}
+
+.tab-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.25rem;
+  border-radius: 0px !important;
+  background: rgba(12, 12, 16, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-gray-300);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tab-btn:hover {
+  color: #ffffff;
+  border-color: #FA6352;
+  background: rgba(22, 22, 28, 0.85);
+}
+
+.tab-btn.active {
+  background: #FA6352;
+  border: 2px solid #FA6352;
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(250, 99, 82, 0.45);
+}
+
+/* Fullscreen Video Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(25px);
+  z-index: 2000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-box {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  background: #08080b;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 80px rgba(250, 99, 82, 0.35), 0 0 120px rgba(0, 0, 0, 0.98);
+  border-radius: 0px;
+  overflow: hidden;
+  transform: scale(0.96);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-box {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.85rem 1.25rem;
+  background: #0c0c10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Minimal Clean Modal Headers */
+#videoModal .modal-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0.65rem 1rem !important;
+}
+
+#imageModal .modal-header {
+  justify-content: flex-end !important;
+}
+
+#imageModalHeaderInfo {
+  display: none !important;
+}
+
+#modalYouTubePlayer {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+}
+
+/* Responsive Vertical Reel Modal Adaptor */
+.modal-box.vertical-reel-mode {
+  max-width: 440px !important;
+  width: 92vw !important;
+}
+
+.modal-box.vertical-reel-mode .modal-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.modal-box.vertical-reel-mode #modalVideoHeaderInfo {
+  display: flex;
+}
+
+.modal-box.vertical-reel-mode #modalVideoWrapper {
+  aspect-ratio: 9 / 16 !important;
+  max-height: 80vh !important;
+  width: auto !important;
+  margin: 0 auto;
+}
+
+.modal-box.vertical-reel-mode video {
+  max-height: 80vh !important;
+  object-fit: contain;
+}
+
+/* Minimal Clean Thumbnail Lightbox Modal (No Header Info / Dots) */
+#imageModal .modal-header {
+  justify-content: flex-end !important;
+}
+
+#imageModal #imageModalHeaderInfo {
+  display: none !important;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .ba-handle {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* ==========================================================================
+   AUREX Brand Cursor (Native Hardware Cursor System)
+   ========================================================================== */
+
+/* 1. Global Default Cursor: Aurex Emblem */
+html,
+body {
+  cursor: url('assets/aurex-cursor-default.png') 16 10, auto;
+}
+
+/* 2. Inherit custom cursor across nested layout elements */
+*,
+*::before,
+*::after {
+  cursor: inherit;
+}
+
+/* 3. Clickable & Interactive Elements: Glowing Pointer Variant */
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+select,
+summary,
+label[for],
+.cursor-pointer,
+.tab-btn,
+.aurex-btn,
+.project-card-item,
+.step-card,
+.faq-trigger,
+.filter-chip,
+.interactive,
+.aurex-menu-backdrop {
+  cursor: url('assets/aurex-cursor-pointer.png') 19 12, pointer !important;
+}
+
+/* Ensure child elements inside links/buttons inherit the pointer cursor */
+a *,
+button *,
+[role="button"] *,
+.cursor-pointer *,
+.tab-btn *,
+.aurex-btn *,
+.project-card-item * {
+  cursor: inherit !important;
+}
+
+/* 4. Mouse Down / Active Click: Pressed State */
+html:active,
+body:active,
+a:active,
+button:active,
+[role="button"]:active,
+.cursor-pointer:active {
+  cursor: url('assets/aurex-cursor-active.png') 14 9, pointer !important;
+}
+
+/* 5. Natural Text Input Cursor for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="password"],
+textarea,
+[contenteditable="true"] {
+  cursor: text !important;
+}
+
+/* 6. Comparison Slider Handle Cursor */
+.ba-handle,
+.ba-slider-container,
+.portfolio-comparison-slider {
+  cursor: ew-resize !important;
+}
+
+/* ==========================================================================
+   XOT STUDIO MINIMALIST ENDING SECTION (AUREX TYPOGRAPHY & SPRING POPUP)
+   ========================================================================== */
+
+.aurex-xot-footer {
+  position: relative;
+  background-color: #030206;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.xot-footer-top {
+  position: relative;
+  width: 100%;
+}
+
+.xot-footer-mask {
+  overflow: hidden;
+  padding: 0.5rem 0 1.5rem 0;
+  perspective: 1200px;
+}
+
+.xot-footer-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Space Grotesk', -apple-system, sans-serif;
+  font-size: clamp(3rem, 16vw, 19rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #FA6352;
+  user-select: none;
+  text-align: center;
+  white-space: nowrap;
+  margin-right: -0.22em;
+  transform: scaleX(1.1);
+  transform-origin: center center;
+  text-shadow: 0 0 60px rgba(250, 99, 82, 0.35);
+  transition: text-shadow 0.4s ease;
+}
+
+.xot-footer-title:hover {
+  text-shadow: 0 0 85px rgba(250, 99, 82, 0.6);
+}
+
+.xot-letter {
+  display: inline-block;
+  will-change: transform, opacity;
+  transform: translateY(125%) perspective(1000px) rotateX(25deg);
+  opacity: 0;
+  transform-origin: 50% 100%;
+  transition: transform 1.15s cubic-bezier(0.16, 1, 0.3, 1.05),
+              opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--i, 0) * 0.07s);
+}
+
+.xot-footer-title.is-visible .xot-letter {
+  transform: translateY(0%) perspective(1000px) rotateX(0deg);
+  opacity: 1;
+}
+
+/* XOT Minimalist Links & Animated Underline */
+.xot-footer-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  padding: 4px 0;
+  transition: color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.xot-footer-link:hover {
+  color: #ffffff;
+}
+
+.xot-footer-link .xot-link-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.xot-footer-link:hover .xot-link-line {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xot-letter {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+

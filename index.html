@@ -1,0 +1,2837 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-clip w-full max-w-full">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>AUREX | High-Performance Video Production &amp; Viral Creative Systems</title>
+
+  <meta name="description"
+    content="AUREX engineers high-retention video systems, viral thumbnails, and direct-response media that scale. Trusted by high-performing creators &amp; brands." />
+  <meta name="keywords"
+    content="AUREX, video editing agency, viral thumbnails, YouTube video editor, high-retention editing, VSL, motion graphics, 3D animation" />
+  <meta name="theme-color" content="#05020a" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="AUREX" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AUREX | High-Performance Video Production &amp; Creative Systems" />
+  <meta property="og:description"
+    content="AUREX crafts high-retention video content, viral thumbnails, and visual systems that convert. 24–48h first cuts with unlimited revisions." />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-emblem.png" />
+  <link rel="apple-touch-icon" href="assets/logo-emblem.png" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800;900&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS Engine -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Montserrat"', 'sans-serif'],
+            heading: ['"Montserrat"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            aurex: {
+              coral: '#FA6352',
+              coralBright: '#FF7160',
+              coralDeep: '#E04B39',
+              black: '#000000',
+              obsidian: '#08080b',
+              card: '#0c0c10'
+            },
+            dark: {
+              950: '#000000',
+              900: '#050507',
+              850: '#08080b',
+              800: '#0c0c10',
+              700: '#14141a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Cache Invalidation -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- Custom Core Design System Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=5.6" />
+</head>
+
+<body
+  class="relative bg-black text-slate-100 antialiased selection:bg-[#FA6352] selection:text-white overflow-x-hidden w-full max-w-full">
+
+  <!-- Ambient Obsidian & Coral Warm Glows -->
+  <div
+    class="fixed top-0 left-0 bottom-0 w-[300px] sm:w-[500px] lg:w-[700px] bg-[radial-gradient(ellipse_at_left,_rgba(250,99,82,0.08)_0%,_transparent_70%)] pointer-events-none z-0">
+  </div>
+  <div
+    class="fixed top-1/3 left-0 w-[260px] sm:w-[420px] h-[650px] bg-gradient-to-r from-[#FA6352]/08 via-[#FA6352]/04 to-transparent blur-[140px] pointer-events-none z-0">
+  </div>
+
+  <div
+    class="fixed top-0 right-0 bottom-0 w-[300px] sm:w-[500px] lg:w-[700px] bg-[radial-gradient(ellipse_at_right,_rgba(250,99,82,0.06)_0%,_transparent_70%)] pointer-events-none z-0">
+  </div>
+  <div
+    class="fixed top-2/3 right-0 w-[260px] sm:w-[420px] h-[650px] bg-gradient-to-l from-[#FA6352]/06 via-transparent to-transparent blur-[140px] pointer-events-none z-0">
+  </div>
+
+  <!-- Noise Texture Overlay -->
+  <div class="bg-noise"></div>
+
+  <!-- Cyber Grid Lines -->
+  <div class="fixed inset-0 bg-cyber-grid pointer-events-none z-0 opacity-40"></div>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <!-- ==================== HEADER / NAVBAR (XOT Minimalist Style) ==================== -->
+  <header
+    class="fixed top-0 left-0 w-full z-[1000000] transition-all duration-300 py-3 sm:py-5 px-4 sm:px-8 lg:px-12 backdrop-blur-md bg-black/40 border-b border-white/5"
+    id="mainHeader">
+    <div class="w-full flex items-center justify-between">
+
+      <!-- Left: AUREX Brand Identity (Icon + Wordmark using attached image & font) -->
+      <a href="./" class="flex items-center gap-2.5 sm:gap-3.5 group select-none" aria-label="AUREX Home">
+        <img src="assets/aurex_brand_icon.png" alt="AUREX Brand Icon"
+          class="h-6 sm:h-7 w-auto object-contain filter drop-shadow-[0_0_14px_rgba(250,99,82,0.7)] group-hover:scale-110 transition-transform duration-300" />
+        <span class="aurex-nav-wordmark">AUREX</span>
+      </a>
+
+      <!-- Center: Minimalist 4-Dot Technical Mark (Image 2 Layout) -->
+      <div class="hidden sm:flex items-center justify-center opacity-60">
+        <div class="grid grid-cols-2 gap-1.5 w-3.5 h-3.5">
+          <span class="w-1 h-1 bg-white/70"></span>
+          <span class="w-1 h-1 bg-white/70"></span>
+          <span class="w-1 h-1 bg-white/70"></span>
+          <span class="w-1 h-1 bg-white/70"></span>
+        </div>
+      </div>
+
+      <!-- Right: Contact Button & Drawer Toggle -->
+      <div class="flex items-center gap-2.5 sm:gap-4">
+        <a href="#order" class="btn-xot-contact">
+          <span>Contact Now</span>
+        </a>
+
+        <!-- Minimalist Right Corner Options Tab Button (Vector Smooth Circle) -->
+        <button id="mobileMenuBtn" onclick="window.toggleOptionsTab(event)" type="button"
+          aria-label="Toggle website options tab" class="btn-nav-menu-circle" title="Menu">
+          <svg class="w-full h-full pointer-events-none block" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <!-- True Geometric Vector Circle (Smooth 360-degree anti-aliasing) -->
+            <circle class="menu-circle-stroke" cx="18" cy="18" r="16.5" stroke="rgba(255,255,255,0.45)"
+              stroke-width="1.4" fill="rgba(255,255,255,0.03)" shape-rendering="geometricPrecision" />
+
+            <!-- Menu State: 2 crisp horizontal lines with exact integer alignment -->
+            <g id="menuIcon" class="menu-bars-group">
+              <rect x="11" y="14" width="14" height="2" rx="1" fill="#ffffff" class="menu-bar-rect" />
+              <rect x="11" y="20" width="14" height="2" rx="1" fill="#ffffff" class="menu-bar-rect" />
+            </g>
+
+            <!-- Close State: crisp X -->
+            <g id="closeIcon" class="hidden">
+              <line x1="12.5" y1="12.5" x2="23.5" y2="23.5" stroke="#FA6352" stroke-width="2" stroke-linecap="round"
+                class="close-bar-line" />
+              <line x1="23.5" y1="12.5" x2="12.5" y2="23.5" stroke="#FA6352" stroke-width="2" stroke-linecap="round"
+                class="close-bar-line" />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== RIGHT CORNER SLIDE-OUT OPTIONS TAB / DRAWER ==================== -->
+  <div id="optionsDrawerBackdrop" class="options-drawer-backdrop" onclick="window.setOptionsTab(false)"></div>
+
+  <aside id="optionsDrawer" aria-label="Website Options Tab" class="options-drawer">
+
+    <!-- Top Header of Drawer -->
+    <div class="flex items-center justify-between pb-4 border-b border-white/10">
+      <div class="flex items-center gap-2.5">
+        <img src="assets/aurex_brand_icon.png" alt="AUREX Logo"
+          class="h-6 w-auto object-contain filter drop-shadow-[0_0_10px_rgba(250,99,82,0.7)]" />
+        <span class="font-mono text-xs font-bold uppercase tracking-widest text-[#FA6352]">AUREX • OPTIONS</span>
+      </div>
+      <button id="closeDrawerBtn" onclick="window.setOptionsTab(false)" aria-label="Close options tab"
+        class="w-8 h-8 rounded-full border border-[#FA6352]/70 bg-[#FA6352]/10 flex items-center justify-center text-[#FA6352] hover:border-[#FA6352] hover:bg-[#FA6352]/25 hover:shadow-[0_0_18px_rgba(250,99,82,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer">
+        <svg class="w-4 h-4 fill-none stroke-current pointer-events-none" stroke-width="2.2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Options List -->
+    <nav class="flex-1 w-full flex flex-col justify-evenly items-center py-6 sm:py-8">
+      <a href="#heroSection" class="drawer-option-link">
+        <span>Home</span>
+      </a>
+      <a href="#portfolio" class="drawer-option-link">
+        <span>Works</span>
+      </a>
+      <a href="#before-after" class="drawer-option-link">
+        <span class="text-[#FA6352]">Before &amp; After</span>
+      </a>
+      <a href="#production" class="drawer-option-link">
+        <span>Production Engine</span>
+      </a>
+      <a href="#reviews" class="drawer-option-link">
+        <span>Client Reviews</span>
+      </a>
+      <a href="#why-us" class="drawer-option-link">
+        <span>Why AUREX</span>
+      </a>
+      <a href="#faq" class="drawer-option-link">
+        <span>FAQ Guide</span>
+      </a>
+      <a href="#order" class="drawer-option-link">
+        <span class="text-white">Start Project Order</span>
+      </a>
+    </nav>
+
+    <!-- Bottom Actions -->
+    <div class="pt-4 border-t border-white/10 flex items-center justify-end">
+      <span class="flex items-center gap-1.5 text-[11px] font-mono text-emerald-400 font-bold">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]"></span>
+        ONLINE NOW
+      </span>
+    </div>
+  </aside>
+
+  <!-- Instant Self-Contained Controller (Immune to Browser Caching) -->
+  <script>
+      (function () {
+        window.setOptionsTab = function (open) {
+          var drawer = document.getElementById('optionsDrawer');
+          var backdrop = document.getElementById('optionsDrawerBackdrop');
+          var menuIcon = document.getElementById('menuIcon');
+          var closeIcon = document.getElementById('closeIcon');
+          var btn = document.getElementById('mobileMenuBtn');
+
+          if (drawer) drawer.classList.toggle('open', open);
+          if (backdrop) backdrop.classList.toggle('open', open);
+          if (menuIcon) menuIcon.classList.toggle('hidden', open);
+          if (closeIcon) closeIcon.classList.toggle('hidden', !open);
+          if (btn) {
+            btn.classList.toggle('is-active', open);
+          }
+          document.body.style.overflow = open ? 'hidden' : '';
+        };
+
+        window.toggleOptionsTab = function (e) {
+          if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+          var drawer = document.getElementById('optionsDrawer');
+          var isOpen = drawer && drawer.classList.contains('open');
+          window.setOptionsTab(!isOpen);
+        };
+
+        window.toggleMobileMenu = window.toggleOptionsTab;
+
+        function bindEvents() {
+          var btn = document.getElementById('mobileMenuBtn');
+          if (btn) btn.onclick = window.toggleOptionsTab;
+
+          var drawer = document.getElementById('optionsDrawer');
+          if (drawer) {
+            drawer.querySelectorAll('a').forEach(function (link) {
+              link.addEventListener('click', function () { window.setOptionsTab(false); });
+            });
+          }
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') window.setOptionsTab(false);
+          });
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', bindEvents);
+        } else {
+          bindEvents();
+        }
+      })();
+  </script>
+
+  <!-- ==================== MAIN HERO SECTION ==================== -->
+  <main class="relative z-10 w-full max-w-full overflow-x-clip">
+
+    <!-- ==================== INTRO / HERO SECTION (parthh.in Inspired Masterpiece) ==================== -->
+    <section id="heroSection" class="aurex-xot-hero">
+
+      <!-- Flowing Silk WebGL Canvas (Dynamic Liquid Gradient like sreedesigns.com) -->
+      <canvas id="heroSilkCanvas" class="hero-silk-canvas" aria-hidden="true"></canvas>
+
+      <!-- Liquid Silk Dark Vignette & Bottom Blending Overlay -->
+      <div class="hero-silk-overlay pointer-events-none" aria-hidden="true"></div>
+
+      <!-- Ambient Micro Grid Overlay -->
+      <div class="absolute inset-0 bg-cyber-grid opacity-20 pointer-events-none z-[3]"></div>
+
+      <!-- Top Hero Pill (Silky Smooth Anti-Aliased Border) -->
+      <div
+        class="hero-top-pill-wrap w-full flex items-center justify-center text-center relative z-20 pt-20 sm:pt-24 mb-2 select-none">
+        <a href="#order"
+          class="hero-top-pill group inline-flex items-center justify-center rounded-full px-5 sm:px-6 py-1.5 text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-white/90 hover:text-white transition-all duration-300 font-mono">
+          <span>HIGH-RETENTION CREATIVE SYSTEMS</span>
+        </a>
+      </div>
+
+      <!-- Monumental Center Typography & Tagline (parthh.in animated structure) -->
+      <div class="aurex-xot-center relative z-10 my-auto w-full flex flex-col items-center justify-center">
+        <!-- Giant Typography Container with GSAP entrance and dynamic mouse tracking -->
+        <div
+          class="name-container gsap-hero-title select-none w-full flex flex-col items-center justify-center leading-none">
+          <h1 class="aurex-giant-title">
+            AUREX
+          </h1>
+          <span class="aurex-giant-subtitle">
+            MEDIA
+          </span>
+        </div>
+
+        <!-- Tagline parts with staggered blur and slide up -->
+        <div class="mt-6 sm:mt-8 text-center space-y-2 sm:space-y-3 px-4 max-w-4xl mx-auto">
+          <p
+            class="tagline-part gsap-hero-tagline text-[11px] sm:text-xs md:text-sm tracking-[0.35em] uppercase text-gray-400 font-mono font-medium">
+            HIGH-PERFORMANCE VIDEO PRODUCTION &amp; SYSTEMS
+          </p>
+          <p
+            class="tagline-part gsap-hero-tagline font-heading text-lg sm:text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            I engineer high-retention media that <span class="gradient-text-coral italic font-serif">delivers real
+              scale.</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Global Presence Bar (parthh.in style bottom indicators) -->
+      <div
+        class="aurex-xot-bottom gsap-hero-bottom relative z-10 flex justify-between items-center w-full max-w-6xl px-4 pb-4">
+        <!-- Left Availability: Worldwide Remote -->
+        <div class="xot-pillar-item">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-400 shrink-0 fill-none stroke-current" stroke-width="1.8"
+            viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+          </svg>
+          <span>WORLDWIDE REMOTE</span>
+        </div>
+
+        <!-- Right Scroll Prompt -->
+        <div class="xot-pillar-item cursor-pointer hover:text-white transition-colors"
+          onclick="document.getElementById('showreelSection').scrollIntoView({behavior: 'smooth'})">
+          <span>SCROLL TO EXPLORE</span>
+          <svg class="w-3.5 h-3.5 text-[#FA6352] animate-bounce shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== FEATURED SHOWREEL & CLIENT NETWORK ==================== -->
+    <section class="relative w-full py-10 sm:py-20 px-3 sm:px-6 lg:px-8 bg-transparent" id="showreelSection">
+      <div class="max-w-6xl w-full mx-auto text-center relative z-10 flex flex-col items-center justify-center">
+
+        <!-- Trusted Client Logos Marquee -->
+        <div class="mb-10 sm:mb-14 overflow-hidden w-full max-w-full">
+          <p class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-widest text-gray-400 mb-3 sm:mb-5">
+            Trusted by Creators &amp; High-Retention Media Networks</p>
+
+          <div class="relative w-full overflow-hidden marquee-fade-mask">
+            <div class="animate-marquee flex py-3">
+
+              <!-- Track 1: Authentic White Vector Logos -->
+              <div class="flex items-center gap-10 sm:gap-16 shrink-0 pr-10 sm:pr-16">
+
+                <!-- YouTube -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="YouTube Creator Network">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 28.57 20">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M27.97 3.12c-.33-1.23-1.3-2.2-2.52-2.52C23.22 0 14.28 0 14.28 0S5.35 0 3.12.6C1.89.93.93 1.9.6 3.12 0 5.35 0 10 0 10s0 4.65.6 6.88c.33 1.23 1.3 2.2 2.52 2.52 2.23.6 11.16.6 11.16.6s8.94 0 11.17-.6c1.23-.32 2.2-1.29 2.52-2.52.6-2.23.6-6.88.6-6.88s0-4.65-.6-6.88zM11.43 14.29V5.71l7.42 4.29-7.42 4.29z" />
+                  </svg>
+                </div>
+
+                <!-- Adobe Premiere Pro -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Adobe Premiere Pro">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 240 234">
+                    <rect x="7" y="7" width="226" height="220" rx="44" fill="none" stroke="currentColor"
+                      stroke-width="14" />
+                    <path
+                      d="m57 164v-103c0-0.7 0.3-1.1 1-1.1 1.7 0 3.3 0 5.6-0.1 2.4-0.1 4.9-0.1 7.6-0.2s5.6-0.1 8.7-0.2 6.1-0.1 9.1-0.1c8.2 0 15 1 20.6 3.1 5 1.7 9.6 4.5 13.4 8.2 3.2 3.2 5.7 7.1 7.3 11.4 1.5 4.2 2.3 8.5 2.3 13 0 8.6-2 15.7-6 21.3s-9.6 9.8-16.1 12.2c-6.8 2.5-14.3 3.4-22.5 3.4-2.4 0-4 0-5-0.1s-2.4-0.1-4.3-0.1v32.1c0.1 0.7-0.4 1.3-1.1 1.4h-0.4-19c-0.8 0-1.2-0.4-1.2-1.3zm21.8-84.7v33.6c1.4 0.1 2.7 0.2 3.9 0.2h5.3c3.9 0 7.8-0.6 11.5-1.8 3.2-0.9 6-2.8 8.2-5.3 2.1-2.5 3.1-5.9 3.1-10.3 0.1-3.1-0.7-6.2-2.3-8.9-1.7-2.6-4.1-4.6-7-5.7-3.7-1.5-7.7-2.1-11.8-2-2.6 0-4.9 0-6.8 0.1-2-0.1-3.4 0-4.1 0.1z" />
+                    <path
+                      d="m147 85.2h17.5c1 0 1.8 0.7 2.1 1.6 0.3 0.8 0.5 1.6 0.6 2.5 0.2 1 0.4 2.1 0.5 3.1 0.1 1.1 0.2 2.3 0.2 3.6 3-3.5 6.6-6.4 10.7-8.6 4.6-2.6 9.9-3.9 15.2-3.9 0.7-0.1 1.3 0.4 1.4 1.1v0.4 19.5c0 0.8-0.5 1.1-1.6 1.1-3.6-0.1-7.3 0.2-10.8 1-2.9 0.6-5.7 1.5-8.4 2.7-1.9 0.9-3.7 2.1-5.1 3.7v51c0 1-0.4 1.4-1.3 1.4h-19.7c-0.8 0.1-1.5-0.4-1.6-1.2v-0.4-55.4c0-2.4 0-4.9-0.1-7.5s-0.1-5.2-0.2-7.8c0-2.3-0.2-4.5-0.4-6.8-0.1-0.5 0.2-1 0.7-1.1 0-0.1 0.2-0.1 0.3 0z" />
+                  </svg>
+                </div>
+
+                <!-- Adobe After Effects -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Adobe After Effects">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 240 234">
+                    <rect x="7" y="7" width="226" height="220" rx="44" fill="none" stroke="currentColor"
+                      stroke-width="14" />
+                    <path
+                      d="m96.4 140h-37.2l-7.6 23.6c-0.2 0.9-1 1.5-1.9 1.4h-18.8c-1.1 0-1.4-0.6-1.1-1.8l32.2-92.3c0.3-1 0.6-1.9 1-3.1 0.4-2.1 0.6-4.3 0.6-6.5-0.1-0.5 0.3-1 0.8-1.1h0.3 25.6c0.7 0 1.2 0.3 1.3 0.8l36.5 102c0.3 1.1 0 1.6-1 1.6h-20.9c-0.7 0.1-1.4-0.4-1.6-1.1l-8.2-24zm-31.4-19.9h25.4c-0.6-2.1-1.4-4.6-2.3-7.2-0.9-2.7-1.8-5.6-2.7-8.6-1-3.1-1.9-6.1-2.9-9.2s-1.9-6-2.7-8.9c-0.8-2.8-1.5-5.4-2.2-7.8h-0.2c-0.9 4.3-2 8.6-3.4 12.9-1.5 4.8-3 9.8-4.6 14.8-1.3 5.1-2.9 9.8-4.4 14z" />
+                    <path
+                      d="m187 131h-31.7c0.4 3.1 1.4 6.2 3.1 8.9 1.8 2.7 4.3 4.8 7.3 6 4 1.7 8.4 2.6 12.8 2.5 3.5-0.1 7-0.4 10.4-1.1 3.1-0.4 6.1-1.2 8.9-2.3 0.5-0.4 0.8-0.2 0.8 0.8v15.3c0 0.4-0.1 0.8-0.2 1.2-0.2 0.3-0.4 0.5-0.7 0.7-3.2 1.4-6.5 2.4-10 3-4.7 0.9-9.4 1.3-14.2 1.2-7.6 0-14-1.2-19.2-3.5-4.9-2.1-9.2-5.4-12.6-9.5-3.2-3.9-5.5-8.3-6.9-13.1-1.4-4.7-2.1-9.6-2.1-14.6 0-5.4 0.8-10.7 2.5-15.9 1.6-5 4.1-9.6 7.5-13.7 3.3-4 7.4-7.2 12.1-9.5s10.3-3.1 16.7-3.1c5.3-0.1 10.6 0.9 15.5 3.1 4.1 1.8 7.7 4.5 10.5 8 2.6 3.4 4.7 7.2 6 11.4 1.3 4 1.9 8.1 1.9 12.2 0 2.4-0.1 4.5-0.2 6.4-0.2 1.9-0.3 3.3-0.4 4.2-0.1 0.7-0.7 1.3-1.4 1.3-0.6 0-1.7 0.1-3.3 0.2-1.6 0.2-3.5 0.3-5.8 0.3s-4.7-0.4-7.3-0.4zm-31.7-14.6h21.1c2.6 0 4.5 0 5.7-0.1 0.8-0.1 1.6-0.3 2.3-0.8v-1c0-1.3-0.2-2.5-0.6-3.7-1.8-5.6-7.1-9.4-13-9.2-5.5-0.3-10.7 2.6-13.3 7.6-1.2 2.3-1.9 4.7-2.2 7.2z" />
+                  </svg>
+                </div>
+
+                <!-- Instagram -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Instagram Creators">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                  </svg>
+                </div>
+
+                <!-- Facebook -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Facebook Creators">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                  </svg>
+                </div>
+
+                <!-- Blender 3D -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Blender 3D VFX">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.166-.58.58-1.343.91-2.166.865-.823-.045-1.586-.547-2.166-1.127-.58-.58-.91-1.343-.865-2.166l-.419.263c-.314.198-.674.303-1.042.303-.538 0-1.048-.225-1.41-.62-.733-.799-.675-2.036.124-2.768l6.398-5.856c.799-.732 2.036-.674 2.768.124.732.799.674 2.036-.124 2.768l-2.02 1.848a5.353 5.353 0 0 1 2.665.65c1.196.69 2.137 1.745 2.677 3.003.54 1.258.618 2.656.223 3.966-.395 1.31-1.22 2.45-2.348 3.238-1.128.788-2.482 1.173-3.844 1.096-1.362-.077-2.664-.61-3.7-1.517-1.036-.907-1.742-2.115-2.006-3.434-.264-1.319-.044-2.684.625-3.879l-4.516 2.836c-.927.583-2.155.304-2.738-.623-.583-.927-.304-2.155.623-2.738l10.978-6.897c.927-.583 2.155-.304 2.738.623.583.927.304 2.155-.623 2.738L12.51 13.214z" />
+                  </svg>
+                </div>
+
+                <!-- Apple -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Apple Ecosystem / ProRes">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 4.558c.805-.987 1.35-2.364 1.208-3.733-1.169.052-2.585.78-3.416 1.753-.728.844-1.364 2.247-1.195 3.571 1.312.104 2.623-.65 3.403-1.591z" />
+                  </svg>
+                </div>
+
+                <!-- TikTok -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="TikTok Creator Ecosystem">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                  </svg>
+                </div>
+
+                <!-- Shopify -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Shopify Media Brands">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.067-.148-.067s-.103.045-.133.076l-2.032 2.053-.941-2.909c-.044-.135-.164-.207-.284-.207-.029 0-.059.006-.089.018l-8.031 3.238c-.149.061-.239.207-.225.366l2.19 18.064 8.68 1.892zm-2.046-18.06l1.378-1.391.868 2.684-2.246-1.293zm-3.805 1.545l3.208 1.848-2.678 1.542-.53-3.39zm3.507 4.093l2.846-1.639 1.944 13.125-4.79 1.037V11.557zm-1.063.613v13.792l-6.31-1.376-1.748-14.414 8.058 1.998zm-6.22-3.153l.366 2.34-5.326-1.32 4.96-1.02z" />
+                  </svg>
+                </div>
+
+                <!-- Spotify -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Spotify Studios">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                  </svg>
+                </div>
+
+                <!-- Twitch -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Twitch Streamers">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
+                  </svg>
+                </div>
+
+                <!-- Adobe Photoshop -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Adobe Photoshop">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 240 234">
+                    <rect x="7" y="7" width="226" height="220" rx="44" fill="none" stroke="currentColor"
+                      stroke-width="14" />
+                    <path
+                      d="M57 164V61c0-.7.3-1.1 1-1.1 1.7 0 3.3 0 5.6-.1 2.4-.1 4.9-.1 7.6-.2s5.6-.1 8.7-.2 6.1-.1 9.1-.1c8.2 0 15 1 20.6 3.1 5 1.7 9.6 4.5 13.4 8.2 3.2 3.2 5.7 7.1 7.3 11.4 1.5 4.2 2.3 8.5 2.3 13 0 8.6-2 15.7-6 21.3s-9.6 9.8-16.1 12.2c-6.8 2.5-14.3 3.4-22.5 3.4-2.4 0-4 0-5-.1s-2.4-.1-4.3-.1V164c.1.7-.4 1.3-1.1 1.4h-.4-19c-.8 0-1.2-.4-1.2-1.4zm21.8-84.7v33.6c1.4.1 2.7.2 3.9.2h5.3c3.9 0 7.8-.6 11.5-1.8 3.2-.9 6-2.8 8.2-5.3 2.1-2.5 3.1-5.9 3.1-10.3.1-3.1-.7-6.2-2.3-8.9-1.7-2.6-4.1-4.6-7-5.7-3.7-1.5-7.7-2.1-11.8-2-2.6 0-4.9 0-6.8.1-2-.1-3.4 0-4.1.1z" />
+                    <path
+                      d="M147.2 144.5c2.4 1.6 5.3 2.8 8.3 3.5 3.6.8 7.3 1.2 11 1.1 3.5 0 6.3-.6 8.3-1.8 1.6-.9 2.5-2.6 2.4-4.5.1-1.6-.6-3.1-1.9-4-1.8-1.3-4.1-2.2-7-2.9l-10.4-2.8c-5.7-1.5-10.2-3.8-13.4-6.8-3.3-3.1-5-7.4-4.7-11.9-.3-4.2 1.3-8.4 4.3-11.4 3.4-3.4 7.9-5.5 12.7-6.1 4.5-.6 9-.7 13.5-.4 3.9.2 7.7.8 11.4 1.8 3.2.8 6.2 2 9.1 3.5l-5.6 15.3c-2.8-1.5-5.8-2.6-9-3.2-2.8-.5-5.7-.7-8.5-.6-2.9 0-5.2.5-6.9 1.5-1.4.8-2.2 2.3-2.1 3.9 0 1.4.6 2.7 1.8 3.5 1.7 1.2 3.8 2 6.5 2.6l10.9 2.8c6 1.5 10.7 3.8 14.1 6.8 3.4 3.1 5.2 7.5 4.9 12.1.3 4.6-1.4 9.1-4.7 12.4-3.7 3.7-8.7 5.9-13.9 6.4-5.4.6-10.9.6-16.3-.1-4.7-.6-9.2-1.9-13.5-3.8l5.5-16.1z" />
+                  </svg>
+                </div>
+
+              </div>
+
+              <!-- Track 2: Identical Set for Seamless Infinite Loop -->
+              <div class="flex items-center gap-10 sm:gap-16 shrink-0 pr-10 sm:pr-16" aria-hidden="true">
+
+                <!-- YouTube -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="YouTube Creator Network">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 28.57 20">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M27.97 3.12c-.33-1.23-1.3-2.2-2.52-2.52C23.22 0 14.28 0 14.28 0S5.35 0 3.12.6C1.89.93.93 1.9.6 3.12 0 5.35 0 10 0 10s0 4.65.6 6.88c.33 1.23 1.3 2.2 2.52 2.52 2.23.6 11.16.6 11.16.6s8.94 0 11.17-.6c1.23-.32 2.2-1.29 2.52-2.52.6-2.23.6-6.88.6-6.88s0-4.65-.6-6.88zM11.43 14.29V5.71l7.42 4.29-7.42 4.29z" />
+                  </svg>
+                </div>
+
+                <!-- Adobe Premiere Pro -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Adobe Premiere Pro">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 240 234">
+                    <rect x="7" y="7" width="226" height="220" rx="44" fill="none" stroke="currentColor"
+                      stroke-width="14" />
+                    <path
+                      d="m57 164v-103c0-0.7 0.3-1.1 1-1.1 1.7 0 3.3 0 5.6-0.1 2.4-0.1 4.9-0.1 7.6-0.2s5.6-0.1 8.7-0.2 6.1-0.1 9.1-0.1c8.2 0 15 1 20.6 3.1 5 1.7 9.6 4.5 13.4 8.2 3.2 3.2 5.7 7.1 7.3 11.4 1.5 4.2 2.3 8.5 2.3 13 0 8.6-2 15.7-6 21.3s-9.6 9.8-16.1 12.2c-6.8 2.5-14.3 3.4-22.5 3.4-2.4 0-4 0-5-0.1s-2.4-0.1-4.3-0.1v32.1c0.1 0.7-0.4 1.3-1.1 1.4h-0.4-19c-0.8 0-1.2-0.4-1.2-1.3zm21.8-84.7v33.6c1.4 0.1 2.7 0.2 3.9 0.2h5.3c3.9 0 7.8-0.6 11.5-1.8 3.2-0.9 6-2.8 8.2-5.3 2.1-2.5 3.1-5.9 3.1-10.3 0.1-3.1-0.7-6.2-2.3-8.9-1.7-2.6-4.1-4.6-7-5.7-3.7-1.5-7.7-2.1-11.8-2-2.6 0-4.9 0-6.8 0.1-2-0.1-3.4 0-4.1 0.1z" />
+                    <path
+                      d="m147 85.2h17.5c1 0 1.8 0.7 2.1 1.6 0.3 0.8 0.5 1.6 0.6 2.5 0.2 1 0.4 2.1 0.5 3.1 0.1 1.1 0.2 2.3 0.2 3.6 3-3.5 6.6-6.4 10.7-8.6 4.6-2.6 9.9-3.9 15.2-3.9 0.7-0.1 1.3 0.4 1.4 1.1v0.4 19.5c0 0.8-0.5 1.1-1.6 1.1-3.6-0.1-7.3 0.2-10.8 1-2.9 0.6-5.7 1.5-8.4 2.7-1.9 0.9-3.7 2.1-5.1 3.7v51c0 1-0.4 1.4-1.3 1.4h-19.7c-0.8 0.1-1.5-0.4-1.6-1.2v-0.4-55.4c0-2.4 0-4.9-0.1-7.5s-0.1-5.2-0.2-7.8c0-2.3-0.2-4.5-0.4-6.8-0.1-0.5 0.2-1 0.7-1.1 0-0.1 0.2-0.1 0.3 0z" />
+                  </svg>
+                </div>
+
+                <!-- Adobe After Effects -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Adobe After Effects">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 240 234">
+                    <rect x="7" y="7" width="226" height="220" rx="44" fill="none" stroke="currentColor"
+                      stroke-width="14" />
+                    <path
+                      d="m96.4 140h-37.2l-7.6 23.6c-0.2 0.9-1 1.5-1.9 1.4h-18.8c-1.1 0-1.4-0.6-1.1-1.8l32.2-92.3c0.3-1 0.6-1.9 1-3.1 0.4-2.1 0.6-4.3 0.6-6.5-0.1-0.5 0.3-1 0.8-1.1h0.3 25.6c0.7 0 1.2 0.3 1.3 0.8l36.5 102c0.3 1.1 0 1.6-1 1.6h-20.9c-0.7 0.1-1.4-0.4-1.6-1.1l-8.2-24zm-31.4-19.9h25.4c-0.6-2.1-1.4-4.6-2.3-7.2-0.9-2.7-1.8-5.6-2.7-8.6-1-3.1-1.9-6.1-2.9-9.2s-1.9-6-2.7-8.9c-0.8-2.8-1.5-5.4-2.2-7.8h-0.2c-0.9 4.3-2 8.6-3.4 12.9-1.5 4.8-3 9.8-4.6 14.8-1.3 5.1-2.9 9.8-4.4 14z" />
+                    <path
+                      d="m187 131h-31.7c0.4 3.1 1.4 6.2 3.1 8.9 1.8 2.7 4.3 4.8 7.3 6 4 1.7 8.4 2.6 12.8 2.5 3.5-0.1 7-0.4 10.4-1.1 3.1-0.4 6.1-1.2 8.9-2.3 0.5-0.4 0.8-0.2 0.8 0.8v15.3c0 0.4-0.1 0.8-0.2 1.2-0.2 0.3-0.4 0.5-0.7 0.7-3.2 1.4-6.5 2.4-10 3-4.7 0.9-9.4 1.3-14.2 1.2-7.6 0-14-1.2-19.2-3.5-4.9-2.1-9.2-5.4-12.6-9.5-3.2-3.9-5.5-8.3-6.9-13.1-1.4-4.7-2.1-9.6-2.1-14.6 0-5.4 0.8-10.7 2.5-15.9 1.6-5 4.1-9.6 7.5-13.7 3.3-4 7.4-7.2 12.1-9.5s10.3-3.1 16.7-3.1c5.3-0.1 10.6 0.9 15.5 3.1 4.1 1.8 7.7 4.5 10.5 8 2.6 3.4 4.7 7.2 6 11.4 1.3 4 1.9 8.1 1.9 12.2 0 2.4-0.1 4.5-0.2 6.4-0.2 1.9-0.3 3.3-0.4 4.2-0.1 0.7-0.7 1.3-1.4 1.3-0.6 0-1.7 0.1-3.3 0.2-1.6 0.2-3.5 0.3-5.8 0.3s-4.7-0.4-7.3-0.4zm-31.7-14.6h21.1c2.6 0 4.5 0 5.7-0.1 0.8-0.1 1.6-0.3 2.3-0.8v-1c0-1.3-0.2-2.5-0.6-3.7-1.8-5.6-7.1-9.4-13-9.2-5.5-0.3-10.7 2.6-13.3 7.6-1.2 2.3-1.9 4.7-2.2 7.2z" />
+                  </svg>
+                </div>
+
+                <!-- Instagram -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Instagram Creators">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                  </svg>
+                </div>
+
+                <!-- Facebook -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Facebook Creators">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                  </svg>
+                </div>
+
+                <!-- Blender 3D -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Blender 3D VFX">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.166-.58.58-1.343.91-2.166.865-.823-.045-1.586-.547-2.166-1.127-.58-.58-.91-1.343-.865-2.166l-.419.263c-.314.198-.674.303-1.042.303-.538 0-1.048-.225-1.41-.62-.733-.799-.675-2.036.124-2.768l6.398-5.856c.799-.732 2.036-.674 2.768.124.732.799.674 2.036-.124 2.768l-2.02 1.848a5.353 5.353 0 0 1 2.665.65c1.196.69 2.137 1.745 2.677 3.003.54 1.258.618 2.656.223 3.966-.395 1.31-1.22 2.45-2.348 3.238-1.128.788-2.482 1.173-3.844 1.096-1.362-.077-2.664-.61-3.7-1.517-1.036-.907-1.742-2.115-2.006-3.434-.264-1.319-.044-2.684.625-3.879l-4.516 2.836c-.927.583-2.155.304-2.738-.623-.583-.927-.304-2.155.623-2.738l10.978-6.897c.927-.583 2.155-.304 2.738.623.583.927.304 2.155-.623 2.738L12.51 13.214z" />
+                  </svg>
+                </div>
+
+                <!-- Apple -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Apple Ecosystem / ProRes">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 4.558c.805-.987 1.35-2.364 1.208-3.733-1.169.052-2.585.78-3.416 1.753-.728.844-1.364 2.247-1.195 3.571 1.312.104 2.623-.65 3.403-1.591z" />
+                  </svg>
+                </div>
+
+                <!-- TikTok -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="TikTok Creator Ecosystem">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                  </svg>
+                </div>
+
+                <!-- Shopify -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Shopify Media Brands">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.067-.148-.067s-.103.045-.133.076l-2.032 2.053-.941-2.909c-.044-.135-.164-.207-.284-.207-.029 0-.059.006-.089.018l-8.031 3.238c-.149.061-.239.207-.225.366l2.19 18.064 8.68 1.892zm-2.046-18.06l1.378-1.391.868 2.684-2.246-1.293zm-3.805 1.545l3.208 1.848-2.678 1.542-.53-3.39zm3.507 4.093l2.846-1.639 1.944 13.125-4.79 1.037V11.557zm-1.063.613v13.792l-6.31-1.376-1.748-14.414 8.058 1.998zm-6.22-3.153l.366 2.34-5.326-1.32 4.96-1.02z" />
+                  </svg>
+                </div>
+
+                <!-- Spotify -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Spotify Studios">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                  </svg>
+                </div>
+
+                <!-- Twitch -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Twitch Streamers">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
+                  </svg>
+                </div>
+
+                <!-- Adobe Photoshop -->
+                <div
+                  class="flex items-center text-white/80 hover:text-white hover:scale-110 transition-all duration-300 shrink-0 select-none cursor-pointer"
+                  title="Adobe Photoshop">
+                  <svg class="h-7 sm:h-8 w-auto fill-current" viewBox="0 0 240 234">
+                    <rect x="7" y="7" width="226" height="220" rx="44" fill="none" stroke="currentColor"
+                      stroke-width="14" />
+                    <path
+                      d="M57 164V61c0-.7.3-1.1 1-1.1 1.7 0 3.3 0 5.6-.1 2.4-.1 4.9-.1 7.6-.2s5.6-.1 8.7-.2 6.1-.1 9.1-.1c8.2 0 15 1 20.6 3.1 5 1.7 9.6 4.5 13.4 8.2 3.2 3.2 5.7 7.1 7.3 11.4 1.5 4.2 2.3 8.5 2.3 13 0 8.6-2 15.7-6 21.3s-9.6 9.8-16.1 12.2c-6.8 2.5-14.3 3.4-22.5 3.4-2.4 0-4 0-5-.1s-2.4-.1-4.3-.1V164c.1.7-.4 1.3-1.1 1.4h-.4-19c-.8 0-1.2-.4-1.2-1.4zm21.8-84.7v33.6c1.4.1 2.7.2 3.9.2h5.3c3.9 0 7.8-.6 11.5-1.8 3.2-.9 6-2.8 8.2-5.3 2.1-2.5 3.1-5.9 3.1-10.3.1-3.1-.7-6.2-2.3-8.9-1.7-2.6-4.1-4.6-7-5.7-3.7-1.5-7.7-2.1-11.8-2-2.6 0-4.9 0-6.8.1-2-.1-3.4 0-4.1.1z" />
+                    <path
+                      d="M147.2 144.5c2.4 1.6 5.3 2.8 8.3 3.5 3.6.8 7.3 1.2 11 1.1 3.5 0 6.3-.6 8.3-1.8 1.6-.9 2.5-2.6 2.4-4.5.1-1.6-.6-3.1-1.9-4-1.8-1.3-4.1-2.2-7-2.9l-10.4-2.8c-5.7-1.5-10.2-3.8-13.4-6.8-3.3-3.1-5-7.4-4.7-11.9-.3-4.2 1.3-8.4 4.3-11.4 3.4-3.4 7.9-5.5 12.7-6.1 4.5-.6 9-.7 13.5-.4 3.9.2 7.7.8 11.4 1.8 3.2.8 6.2 2 9.1 3.5l-5.6 15.3c-2.8-1.5-5.8-2.6-9-3.2-2.8-.5-5.7-.7-8.5-.6-2.9 0-5.2.5-6.9 1.5-1.4.8-2.2 2.3-2.1 3.9 0 1.4.6 2.7 1.8 3.5 1.7 1.2 3.8 2 6.5 2.6l10.9 2.8c6 1.5 10.7 3.8 14.1 6.8 3.4 3.1 5.2 7.5 4.9 12.1.3 4.6-1.4 9.1-4.7 12.4-3.7 3.7-8.7 5.9-13.9 6.4-5.4.6-10.9.6-16.3-.1-4.7-.6-9.2-1.9-13.5-3.8l5.5-16.1z" />
+                  </svg>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Showreel 3-Reel Showcase (Left, Center, Right) -->
+        <div
+          class="relative w-full max-w-[360px] xs:max-w-[440px] sm:max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto rounded-2xl overflow-hidden bg-black border border-white/20 shadow-[0_12px_45px_rgba(0,0,0,0.95)] hover:border-[#FA6352]/70 hover:shadow-[0_0_45px_rgba(250,99,82,0.35)] transition-all duration-500 mb-6 sm:mb-12"
+          id="featuredReelShowcase">
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10 bg-black">
+
+            <!-- 1. LEFT REEL (YouTube Short) -->
+            <div class="relative aspect-[9/16] w-full bg-black overflow-hidden cursor-pointer group/reel1"
+              id="reelCardLeft" onclick="openVideoModal('https://www.youtube.com/shorts/8M6q80Qi6g0', 'The matcha trends needs to end', 'Viral Short Reel')">
+              <img src="assets/portfolio/poster-left.jpg" alt="Viral Podcast Reel Cut"
+                class="w-full h-full object-cover group-hover/reel1:scale-105 transition-transform duration-700"
+                id="posterLeft" />
+              <video id="previewLeft"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 pointer-events-none"
+                muted loop playsinline preload="metadata">
+                <source src="short-video-left.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 group-hover/reel1:bg-black/10 transition-all duration-300 pointer-events-none">
+              </div>
+              <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                <div class="play-btn-cyber">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-0.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. CENTER REEL (Current Video) -->
+            <div class="relative aspect-[9/16] w-full bg-black overflow-hidden cursor-pointer group/reel2"
+              id="reelCardCenter" onclick="openVideoModal('featured-reel.mp4', '', '')">
+              <img src="assets/portfolio/featured-reel-poster.jpg" alt="Featured AI Reel Cut"
+                class="w-full h-full object-cover group-hover/reel2:scale-105 transition-transform duration-700"
+                id="posterCenter" />
+              <video id="previewCenter"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 pointer-events-none"
+                muted loop playsinline preload="metadata">
+                <source src="featured-reel.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 group-hover/reel2:bg-black/10 transition-all duration-300 pointer-events-none">
+              </div>
+              <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                <div class="play-btn-cyber">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-0.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. RIGHT REEL (YouTube Short) -->
+            <div class="relative aspect-[9/16] w-full bg-black overflow-hidden cursor-pointer group/reel3"
+              id="reelCardRight" onclick="openVideoModal('https://youtube.com/shorts/Qm-YL1aAHAs?si=1k8sO8f8bd42ZUaA', '4 Questions for Your Personal Brand Journey', 'Viral Short Reel')">
+              <img src="assets/portfolio/poster-right.jpg" alt="4 Questions for Your Personal Brand Journey"
+                class="w-full h-full object-cover group-hover/reel3:scale-105 transition-transform duration-700"
+                id="posterRight" />
+              <video id="previewRight"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 pointer-events-none"
+                muted loop playsinline preload="metadata">
+                <source src="short-video-right.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 group-hover/reel3:bg-black/10 transition-all duration-300 pointer-events-none">
+              </div>
+              <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                <div class="play-btn-cyber">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-0.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== BEFORE & AFTER THUMBNAIL TRANSFORMATION SECTION ==================== -->
+    <section class="relative w-full py-8 sm:py-20 px-3 sm:px-6 lg:px-8 bg-transparent" id="before-after">
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-10">
+          <div
+            class="inline-flex items-center justify-center px-4 py-1.5 bg-black/90 border border-white/20 backdrop-blur-xl mb-3 sm:mb-4 shadow-[0_0_18px_rgba(250,99,82,0.15)]">
+            <span
+              class="text-[10px] sm:text-xs font-extrabold uppercase tracking-widest text-[#FA6352] font-display">Thumbnail
+              Engineering</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+            Thumbnails that <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FA6352] to-[#ff7160]">Convert.</span>
+          </h2>
+        </div>
+
+        <!-- Before & After Transformation Showcase Card -->
+        <div
+          class="relative w-full max-w-5xl mx-auto bg-[#08080b] border border-white/20 p-2 sm:p-5 shadow-[0_0_50px_rgba(0,0,0,0.9)] hover:border-[#FA6352] transition-all duration-300">
+          <div class="relative w-full aspect-video overflow-hidden border border-white/15 bg-black cursor-pointer group"
+            onclick="openImageModal('assets/portfolio/thumbnail-concept-to-final.jpg', 'Before &amp; After Thumbnail Transformation (Concept Draft &rarr; Viral Master)')">
+            <img src="assets/portfolio/thumbnail-concept-to-final.jpg"
+              alt="AUREX Thumbnail Transformation - Concept Draft to Viral Final Master"
+              class="w-full h-full object-cover transform group-hover:scale-[1.02] transition-transform duration-500" />
+
+            <!-- Floating Cyber Inspect Badge -->
+            <div
+              class="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-10 px-3 py-1.5 bg-black/85 border border-white/30 text-white text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider backdrop-blur-md opacity-90 group-hover:opacity-100 group-hover:border-[#FA6352] group-hover:text-[#FA6352] transition-all duration-300 flex items-center gap-1.5 shadow-lg pointer-events-none">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                <path
+                  d="M5 3a2 2 0 00-2 2v2a1 1 0 002 0V5h2a1 1 0 000-2H5zM15 3a1 1 0 000 2h2v2a1 1 0 102 0V5a2 2 0 00-2-2h-2zM3 15a1 1 0 011-1h2a1 1 0 110 2H5v2a1 1 0 11-2 0v-2zM17 15a1 1 0 00-1 1v2h-2a1 1 0 100 2h2a2 2 0 002-2v-2a1 1 0 00-1-1z" />
+              </svg>
+              <span>Click to Inspect High-Res</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED WORKS & PORTFOLIO SECTION ==================== -->
+    <section class="relative w-full py-8 sm:py-20 px-3 sm:px-6 lg:px-8 bg-transparent" id="portfolio">
+      <div class="max-w-7xl mx-auto relative z-10">
+
+        <!-- Section Title -->
+        <div class="text-center max-w-4xl mx-auto mb-6 sm:mb-10">
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+            Our Creative Works
+          </h2>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="tabs-scroll-wrap gap-2.5 sm:gap-3.5 mb-6 sm:mb-10">
+
+          <button data-filter="all" class="tab-btn active">
+            <span>All Works</span>
+          </button>
+
+          <button data-filter="thumbnails" class="tab-btn">
+            <span>Thumbnails</span>
+          </button>
+
+          <button data-filter="longform" class="tab-btn">
+            <span>YouTube Long-Form</span>
+          </button>
+
+          <button data-filter="sports" class="tab-btn">
+            <span>Sports &amp; Course Vlogs</span>
+          </button>
+
+          <button data-filter="documentary" class="tab-btn">
+            <span>Documentary &amp; AI</span>
+          </button>
+        </div>
+
+        <!-- Giant Outer Border Box -->
+        <div
+          class="relative w-full rounded-none bg-black border-2 border-white/30 p-3 sm:p-8 lg:p-10 shadow-[0_0_40px_rgba(0,0,0,0.9)] hover:border-[#FA6352] hover:shadow-[0_0_60px_rgba(250,99,82,0.3)] transition-all duration-500 overflow-hidden min-h-[260px] flex flex-col justify-center">
+
+          <div
+            class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FA6352] to-transparent pointer-events-none">
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8" id="projectsGrid">
+
+            <!-- Project 1: ILYA AI Deep Dive Documentary -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="video" data-category="documentary longform"
+              onclick="openVideoModal('https://www.youtube.com/watch?v=bV3h0fjwEUs', 'The Greatest Engineer in AI', 'Documentary &amp; AI Deep-Dive')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/ilya-ai.jpg" alt="The Greatest Engineer in AI Documentary"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors"></div>
+
+                <!-- Center Square Play Button -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Category Tag -->
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold">
+                  Documentary &bull; 1.4M Views
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Nas Daily Viral Controversy Video Essay -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="video" data-category="documentary longform"
+              onclick="openVideoModal('https://www.youtube.com/watch?v=j2uvARdTq4Y', 'Remember These YouTubers? Their Lives Are Ruined Now', 'Viral Video Essay &amp; Sound Design')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/viral-emotion.jpg" alt="Viral Controversy Video Essay"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors"></div>
+
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-red-400 font-bold">
+                  Viral Essay &bull; 890K Views
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: 18 Holes Golf Challenge (12.3 Handicap - Big Dude Golf) -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="video" data-category="sports longform"
+              onclick="openVideoModal('https://www.youtube.com/watch?v=HVIp6MnA_l4', 'This Is What 12.3 Handicap Golf Looks Like From The Green Tees', 'Sports Challenge &amp; Course Vlog')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/golf-12-handicap-real.jpg" alt="12.3 Handicap Golf Challenge Vlog - Big Dude Golf"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors"></div>
+
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold">
+                  Sports Vlog &bull; 5D Tracer
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Srixon Irons Review (Sports & Gear Review) -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="video" data-category="sports longform"
+              onclick="openVideoModal('https://www.youtube.com/watch?v=wxFAXYWjK0M', 'New Srixon ZXi5+ ZXi7 Irons Review — The Iron That Blew Me Away!', 'Sports Gear Review &amp; Master Cut')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/srixon-golf.jpg" alt="Srixon Irons Golf Review"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors"></div>
+
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold">
+                  Gear Review &bull; 4K Master
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Asking Young Millionaires How They Got Rich! -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="video" data-category="longform"
+              onclick="openVideoModal('https://www.youtube.com/watch?v=OrqbaeFa870', 'Asking Young Millionaires How They Got Rich! | Viral Street Interview', 'Viral Street Interview &amp; Lifestyle Cut')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/lamborghini-age-25-interview.jpg"
+                  alt="Asking Young Millionaires How They Got Rich - Viral Street Interview"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors"></div>
+
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold group-hover:border-[#FA6352] transition-colors">
+                  Viral Interview &bull; 16.5% CTR
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: MUST WIN!! Ron Chopper vs Matt Fryer Matchplay -->
+            <div class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+                 data-type="video"
+                 data-category="sports longform"
+                 onclick="openVideoModal('https://www.youtube.com/watch?v=-zPU0v0T10c', 'MUST WIN!! Ron Chopper vs Matt Fryer', 'Sports Challenge &amp; Course Vlog')">
+              
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/the-ashes-golf-vlog.jpg" alt="MUST WIN!! Ron Chopper vs Matt Fryer Golf Matchplay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                <div class="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors"></div>
+                
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                </div>
+
+                <div class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold group-hover:border-[#FA6352] transition-colors">
+                  Sports Vlog &bull; The Ashes
+                </div>
+              </div>
+            </div>
+
+            <!-- Short-Form Reel 1: Viral Lifestyle & Podcast Reel -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="shortform" data-category="shortform reel viral"
+              onclick="openVideoModal('https://www.youtube.com/shorts/8M6q80Qi6g0', 'The matcha trends needs to end', 'Viral Short Reel')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black flex items-center justify-center">
+                <img src="assets/portfolio/poster-left.jpg" alt="Viral Podcast Reel Background"
+                  class="absolute inset-0 w-full h-full object-cover blur-md opacity-35 scale-110 pointer-events-none"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+
+                <div class="relative h-full aspect-[9/16] overflow-hidden shadow-2xl border-x border-white/15 bg-black">
+                  <img src="assets/portfolio/poster-left.jpg" alt="Viral Podcast Reel"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" />
+                  <div class="absolute inset-0 bg-black/20 group-hover:bg-black/5 transition-colors"></div>
+                </div>
+
+                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold z-10 group-hover:border-[#FA6352] transition-colors">
+                  Viral Reel &bull; 9:16 Vertical
+                </div>
+              </div>
+            </div>
+
+            <!-- Short-Form Reel 2: Featured AI & 3D Motion Reel -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="shortform" data-category="shortform reel viral"
+              onclick="openVideoModal('featured-reel.mp4', '', '')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black flex items-center justify-center">
+                <img src="assets/portfolio/featured-reel-poster.jpg" alt="Featured AI Reel Background"
+                  class="absolute inset-0 w-full h-full object-cover blur-md opacity-35 scale-110 pointer-events-none"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+
+                <div class="relative h-full aspect-[9/16] overflow-hidden shadow-2xl border-x border-white/15 bg-black">
+                  <img src="assets/portfolio/featured-reel-poster.jpg" alt="Featured AI Reel"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" />
+                  <div class="absolute inset-0 bg-black/20 group-hover:bg-black/5 transition-colors"></div>
+                </div>
+
+                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold z-10 group-hover:border-[#FA6352] transition-colors">
+                  Featured Reel &bull; High Retention
+                </div>
+              </div>
+            </div>
+
+            <!-- Short-Form Reel 3: Direct-Response Performance Reel -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="shortform" data-category="shortform reel viral"
+              onclick="openVideoModal('https://youtube.com/shorts/Qm-YL1aAHAs?si=1k8sO8f8bd42ZUaA', '4 Questions for Your Personal Brand Journey', 'Viral Short Reel')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black flex items-center justify-center">
+                <img src="assets/portfolio/poster-right.jpg" alt="Direct-Response Reel Background"
+                  class="absolute inset-0 w-full h-full object-cover blur-md opacity-35 scale-110 pointer-events-none"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+
+                <div class="relative h-full aspect-[9/16] overflow-hidden shadow-2xl border-x border-white/15 bg-black">
+                  <img src="assets/portfolio/poster-right.jpg" alt="Direct-Response Reel"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" />
+                  <div class="absolute inset-0 bg-black/20 group-hover:bg-black/5 transition-colors"></div>
+                </div>
+
+                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold z-10 group-hover:border-[#FA6352] transition-colors">
+                  Viral Cut &bull; Direct-Response
+                </div>
+              </div>
+            </div>
+
+            <!-- Thumbnail 1: McLaren Golf Aero Iron Launch -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="thumbnail" data-category="thumbnails commercial sports" style="display: none;"
+              onclick="openImageModal('assets/portfolio/mclaren-golf-iron.jpg', 'McLaren Golf &bull; Aero Cavity Iron Commercial Master')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/mclaren-golf-iron.jpg" alt="McLaren Golf Club Commercial Thumbnail"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/15 group-hover:bg-black/0 transition-colors"></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold group-hover:border-[#FA6352] transition-colors">
+                  Commercial &bull; 13.8% CTR
+                </div>
+              </div>
+            </div>
+
+            <!-- Thumbnail 2: Capsule Hotel Solo Stay Viral Challenge -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="thumbnail" data-category="thumbnails longform" style="display: none;"
+              onclick="openImageModal('assets/portfolio/capsule-hotel-alone.jpg', 'Tokyo Capsule Hotel Solo Stay &bull; High-CTR Viral Vlog Thumbnail')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/capsule-hotel-alone.jpg" alt="Capsule Hotel Viral Challenge Thumbnail"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/15 group-hover:bg-black/0 transition-colors"></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold group-hover:border-[#FA6352] transition-colors">
+                  Viral Vlog &bull; 14.6% CTR
+                </div>
+              </div>
+            </div>
+
+            <!-- Thumbnail 3: 100K Subs & Uncensored Revenue Reveal -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="thumbnail" data-category="thumbnails documentary longform" style="display: none;"
+              onclick="openImageModal('assets/portfolio/youtube-revenue-reveal.jpg', '100K Subs Uncensored Revenue Breakdown &bull; Creator Economy Master Thumbnail')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/youtube-revenue-reveal.jpg" alt="100K Subs Revenue Reveal Thumbnail"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/15 group-hover:bg-black/0 transition-colors"></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold group-hover:border-[#FA6352] transition-colors">
+                  Creator Economy &bull; 15.2% CTR
+                </div>
+              </div>
+            </div>
+
+            <!-- Thumbnail 4: McLaren Track Sunset Review Breakdown -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="thumbnail" data-category="thumbnails sports commercial" style="display: none;"
+              onclick="openImageModal('assets/portfolio/mclaren-racetrack-review.jpg', 'McLaren Golf Iron Track Sunset Breakdown &bull; High-Engagement Review Thumbnail')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/mclaren-racetrack-review.jpg" alt="McLaren Iron Track Sunset Thumbnail"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/15 group-hover:bg-black/0 transition-colors"></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold group-hover:border-[#FA6352] transition-colors">
+                  Sports Review &bull; 14.1% CTR
+                </div>
+              </div>
+            </div>
+
+            <!-- Thumbnail 5: Age 25 Red Lamborghini Street Interview -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="thumbnail" data-category="thumbnails longform commercial" style="display: none;"
+              onclick="openImageModal('assets/portfolio/lamborghini-age-25-interview.jpg', 'Age 25 Lamborghini Owner Street Interview &bull; High-Retention Lifestyle Thumbnail')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/lamborghini-age-25-interview.jpg"
+                  alt="Age 25 Lamborghini Street Interview Thumbnail"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/15 group-hover:bg-black/0 transition-colors"></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold group-hover:border-[#FA6352] transition-colors">
+                  Viral Interview &bull; 16.5% CTR
+                </div>
+              </div>
+            </div>
+
+            <!-- Thumbnail 6: High-CTR Master Thumbnail Strategy -->
+            <div
+              class="project-card-item group cursor-pointer rounded-none bg-[#08080b] border-2 border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_35px_rgba(250,99,82,0.4)] transition-all duration-300 overflow-hidden"
+              data-type="thumbnail" data-category="thumbnails sports" style="display: none;"
+              onclick="openImageModal('assets/portfolio/golf-after.jpg', 'AUREX Retouched Master Thumbnail &bull; High-CTR Study')">
+
+              <div class="relative aspect-video w-full overflow-hidden bg-black">
+                <img src="assets/portfolio/golf-after.jpg" alt="Master Thumbnail Inspection"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-black/15 group-hover:bg-black/0 transition-colors"></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
+                  <div class="play-btn-cyber">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute top-3 left-3 px-2 py-0.5 bg-black/80 border border-white/30 text-[9px] font-mono uppercase text-[#FA6352] font-bold group-hover:border-[#FA6352] transition-colors">
+                  High-CTR Study &bull; 11.4% Target
+                </div>
+              </div>
+            </div>
+
+            <!-- Empty Category State (Shown if a category like Commercial & Review has no items) -->
+            <div id="projectsEmptyState"
+              class="hidden col-span-full py-16 flex-col items-center justify-center text-center">
+              <div
+                class="w-12 h-12 mb-3 rounded-none border border-white/20 bg-white/5 flex items-center justify-center text-[#FA6352] mx-auto">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" />
+                </svg>
+              </div>
+              <p class="text-xs font-mono uppercase tracking-widest text-gray-300 font-bold">New Creative Works In Production</p>
+              <p class="text-[10px] text-gray-500 font-mono mt-1">Section reserved &bull; Upcoming projects will appear
+                here</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CLIENT FEEDBACK & REVIEWS SECTION ==================== -->
+    <section class="relative w-full py-8 sm:py-20 px-3 sm:px-6 lg:px-8 bg-transparent overflow-hidden" id="reviews">
+      <div class="max-w-7xl mx-auto relative z-10">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-12">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-none bg-black border-2 border-white/25 backdrop-blur-xl mb-3 sm:mb-4 shadow-[0_0_20px_rgba(250,99,82,0.2)]">
+            <div class="flex text-[#FA6352] text-xs tracking-wider">★★★★★</div>
+            <span class="text-[10px] sm:text-xs font-extrabold uppercase tracking-widest text-white font-display">4.9
+              &bull; Real Client Feedback</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+            What Our <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FA6352] to-[#ff7160]">Partners
+              Say</span>
+          </h2>
+          <p class="mt-1.5 sm:mt-3 text-xs sm:text-base text-gray-300 max-w-2xl mx-auto">
+            Unscripted performance reviews from channels and founders experiencing exponential view and conversion
+            growth.
+          </p>
+        </div>
+
+        <!-- Dual-Row Sliding Reviews Marquee (parthh.in style) -->
+        <div
+          class="reviews-marquee-container flex flex-col gap-5 sm:gap-6 w-full py-4 overflow-hidden marquee-fade-mask">
+
+          <!-- ROW 1: Sliding Right-to-Left (Moves Left) -->
+          <div class="overflow-hidden w-full">
+            <div class="marquee-track-left flex gap-4 sm:gap-6 py-2">
+
+              <!-- Review 0: Mike - Michael Newton Golf -->
+              <div
+                class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between border-[#FA6352]/40 bg-[#08080c] shadow-[0_4px_24px_-4px_rgba(250,99,82,0.18)]">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-[#FA6352]/40 blur-xs"></div>
+                        <img src="assets/mike-newton.png" alt="Mike – Michael Newton Golf"
+                          class="relative w-9 h-9 rounded-full object-cover border border-[#FA6352]/60 shadow-md">
+                      </div>
+                      <div>
+                        <h4
+                          class="text-xs sm:text-sm font-bold text-white font-display leading-tight flex items-center gap-1.5">
+                          Mike
+                          <span
+                            class="text-[9px] text-[#FA6352] font-mono px-1.5 py-0.2 rounded-none bg-[#FA6352]/10 border border-[#FA6352]/30">NEW</span>
+                        </h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Michael Newton Golf</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none space-y-2.5">
+                    <div class="flex text-[#FA6352] text-xs mb-1">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      &ldquo;I’ve been working with Aizen from Aurex Media for my YouTube video editing, covering both
+                      long-form videos and short-form content, and I couldn’t be happier with the service they provide.
+                      The quality of their work is consistently excellent, with a very professional approach, quick
+                      turnaround times, and a great understanding of exactly what I’m looking for. They follow the brief
+                      extremely well and always deliver content to a high standard.&rdquo;
+                    </p>
+                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                      &ldquo;Outsourcing my video editing has made a huge difference to my workload, freeing up valuable
+                      time and allowing me to focus on other areas of my business. It’s made me far more efficient, and
+                      having a reliable team that I can trust to deliver great results is invaluable.&rdquo;
+                    </p>
+                    <p class="text-[11px] font-mono text-[#FA6352] font-semibold pt-1">
+                      &mdash; Great work as always, and thanks again!
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    Long &amp; Short-Form Full Production
+                  </span>
+                  <span>Turnaround &amp; Quality</span>
+                </div>
+              </div>
+
+              <!-- Review 1: Marcus Vance -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-[#FA6352]/30 blur-xs"></div>
+                        <img src="assets/partners/marcus-vance.jpg" alt="Marcus Vance"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Marcus Vance</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Golf Vlog Network (340K Subs)</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "AUREX completely unlocked our channel. The 3D ball tracer and pacing cuts turned our golf course
+                      footage into high-retention vlogs. Our watch time jumped 42% on the first upload."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    +42% Watch Time Surge
+                  </span>
+                  <span>Long-Form Retention</span>
+                </div>
+              </div>
+
+              <!-- Review 2: Elena Rostova -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-violet-600/30 blur-xs"></div>
+                        <img src="assets/partners/elena-rostova.jpg" alt="Elena Rostova"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Elena Rostova
+                        </h4>
+                        <p class="text-[10px] text-gray-400 font-mono">DeepTech Documentaries</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "The ILYA documentary edit was museum quality. Visual transitions, sound design tension, and
+                      narrative pacing that rivaled Vox and Bloomberg Originals. 1.4 million views with zero ad spend."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    1.4M Organic Views
+                  </span>
+                  <span>Documentary Mastery</span>
+                </div>
+              </div>
+
+              <!-- Review 3: Julian Blake -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-emerald-500/30 blur-xs"></div>
+                        <img src="assets/partners/julian-blake.jpg" alt="Julian Blake"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Julian Blake</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Acquisition Media Founder</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "The thumbnail Before/After is not marketing fluff — it is real. CTR shot up from 3.4% to 11.4% on
+                      release day. That single boost paid for the entire month's production retainer."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    CTR: 3.4% &rarr; 11.4%
+                  </span>
+                  <span>Packaging &amp; CTR</span>
+                </div>
+              </div>
+
+              <!-- Review 4: David Ross -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-[#FA6352]/30 blur-xs"></div>
+                        <img src="assets/partners/david-ross.jpg" alt="David Ross"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">David Ross</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Performance Creator</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "First video team where I didn't have to micromanage every cut. 24-hour turnaround on initial
+                      drafts and revisions handled inside Frame.io in hours. Pure speed."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    24-Hour Cut Velocity
+                  </span>
+                  <span>Workflow &amp; Speed</span>
+                </div>
+              </div>
+
+              <!-- Row 1 Duplicate Items for Seamless Infinite Loop -->
+              <!-- Duplicate Review 0: Mike - Michael Newton Golf -->
+              <div
+                class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between border-[#FA6352]/40 bg-[#08080c] shadow-[0_4px_24px_-4px_rgba(250,99,82,0.18)]">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-[#FA6352]/40 blur-xs"></div>
+                        <img src="assets/mike-newton.png" alt="Mike – Michael Newton Golf"
+                          class="relative w-9 h-9 rounded-full object-cover border border-[#FA6352]/60 shadow-md">
+                      </div>
+                      <div>
+                        <h4
+                          class="text-xs sm:text-sm font-bold text-white font-display leading-tight flex items-center gap-1.5">
+                          Mike
+                          <span
+                            class="text-[9px] text-[#FA6352] font-mono px-1.5 py-0.2 rounded-none bg-[#FA6352]/10 border border-[#FA6352]/30">NEW</span>
+                        </h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Michael Newton Golf</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none space-y-2.5">
+                    <div class="flex text-[#FA6352] text-xs mb-1">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      &ldquo;I’ve been working with Aizen from Aurex Media for my YouTube video editing, covering both
+                      long-form videos and short-form content, and I couldn’t be happier with the service they provide.
+                      The quality of their work is consistently excellent, with a very professional approach, quick
+                      turnaround times, and a great understanding of exactly what I’m looking for. They follow the brief
+                      extremely well and always deliver content to a high standard.&rdquo;
+                    </p>
+                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                      &ldquo;Outsourcing my video editing has made a huge difference to my workload, freeing up valuable
+                      time and allowing me to focus on other areas of my business. It’s made me far more efficient, and
+                      having a reliable team that I can trust to deliver great results is invaluable.&rdquo;
+                    </p>
+                    <p class="text-[11px] font-mono text-[#FA6352] font-semibold pt-1">
+                      &mdash; Great work as always, and thanks again!
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    Long &amp; Short-Form Full Production
+                  </span>
+                  <span>Turnaround &amp; Quality</span>
+                </div>
+              </div>
+
+              <!-- Duplicate Review 1 -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-[#FA6352]/30 blur-xs"></div>
+                        <img src="assets/partners/marcus-vance.jpg" alt="Marcus Vance"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Marcus Vance</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Golf Vlog Network (340K Subs)</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "AUREX completely unlocked our channel. The 3D ball tracer and pacing cuts turned our golf course
+                      footage into high-retention vlogs. Our watch time jumped 42% on the first upload."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    +42% Watch Time Surge
+                  </span>
+                  <span>Long-Form Retention</span>
+                </div>
+              </div>
+
+              <!-- Duplicate Review 2 -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-violet-600/30 blur-xs"></div>
+                        <img src="assets/partners/elena-rostova.jpg" alt="Elena Rostova"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Elena Rostova
+                        </h4>
+                        <p class="text-[10px] text-gray-400 font-mono">DeepTech Documentaries</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "The ILYA documentary edit was museum quality. Visual transitions, sound design tension, and
+                      narrative pacing that rivaled Vox and Bloomberg Originals. 1.4 million views with zero ad spend."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    1.4M Organic Views
+                  </span>
+                  <span>Documentary Mastery</span>
+                </div>
+              </div>
+
+              <!-- Duplicate Review 3 -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-emerald-500/30 blur-xs"></div>
+                        <img src="assets/partners/julian-blake.jpg" alt="Julian Blake"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Julian Blake</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Acquisition Media Founder</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "The thumbnail Before/After is not marketing fluff — it is real. CTR shot up from 3.4% to 11.4% on
+                      release day. That single boost paid for the entire month's production retainer."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    CTR: 3.4% &rarr; 11.4%
+                  </span>
+                  <span>Packaging &amp; CTR</span>
+                </div>
+              </div>
+
+              <!-- Duplicate Review 4 -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-[#FA6352]/30 blur-xs"></div>
+                        <img src="assets/partners/david-ross.jpg" alt="David Ross"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">David Ross</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Performance Creator</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "First video team where I didn't have to micromanage every cut. 24-hour turnaround on initial
+                      drafts and revisions handled inside Frame.io in hours. Pure speed."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    24-Hour Cut Velocity
+                  </span>
+                  <span>Workflow &amp; Speed</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ROW 2: Sliding Left-to-Right (Moves Right) -->
+          <div class="overflow-hidden w-full">
+            <div class="marquee-track-right flex gap-4 sm:gap-6 py-2">
+
+              <!-- Review 5: Maya Lin -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-amber-500/30 blur-xs"></div>
+                        <div
+                          class="relative w-9 h-9 rounded-full bg-gradient-to-tr from-amber-500 to-[#FA6352] text-white font-bold flex items-center justify-center text-xs font-mono shadow-md border border-white/20">
+                          ML</div>
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Maya Lin</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">FinTech &amp; Crypto Insights (580K Subs)</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "Retention graphs went from a steep cliff at 0:30 to an almost flat line throughout. Their audio
+                      mixing and subtle sound-design cues kept viewers locked until the final CTA."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    Flatlined Retention Graph
+                  </span>
+                  <span>Audio Engineering</span>
+                </div>
+              </div>
+
+              <!-- Review 6: Tariq Vance -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-cyan-500/30 blur-xs"></div>
+                        <img src="assets/partners/tariq-vance.webp" alt="Tariq Vance"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Tariq Vance</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Founder &amp; Host, ZeroToScale</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "We tested 3 editing agencies before AUREX. None understood pacing and executive retention like
+                      this team. Our inbound sponsor rate tripled within 60 days of partnering."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    3x Sponsor Deal Inbound
+                  </span>
+                  <span>Executive Polish</span>
+                </div>
+              </div>
+
+              <!-- Review 7: Scott Sterling -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-rose-500/30 blur-xs"></div>
+                        <img src="assets/partners/scott-sterling.jpg" alt="Scott Sterling"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Scott Sterling
+                        </h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Hardware &amp; Tech Benchmarks (820K Subs)</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "Their 3D motion graphics and custom macro B-roll elevated our benchmark reviews into
+                      Apple-keynote caliber presentations. Absolute masters of visual retention."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    Keynote-Tier Motion VFX
+                  </span>
+                  <span>3D Benchmarks</span>
+                </div>
+              </div>
+
+              <!-- Review 8: Chloe Zhang -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-purple-500/30 blur-xs"></div>
+                        <img src="assets/partners/chloe-zhang.jpg" alt="Chloe Zhang"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Chloe Zhang</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Creator Economy &amp; Podcasting</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "The short-form repurposing engine is insane. One 20-minute long-form episode yields 6 viral
+                      vertical cuts that consistently hit 500K+ views on Reels and TikTok."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    500K+ Viral Short Cuts
+                  </span>
+                  <span>Omnichannel Engine</span>
+                </div>
+              </div>
+
+              <!-- Row 2 Duplicate Items for Seamless Infinite Loop -->
+              <!-- Duplicate Review 5 -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-amber-500/30 blur-xs"></div>
+                        <div
+                          class="relative w-9 h-9 rounded-full bg-gradient-to-tr from-amber-500 to-[#FA6352] text-white font-bold flex items-center justify-center text-xs font-mono shadow-md border border-white/20">
+                          ML</div>
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Maya Lin</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">FinTech &amp; Crypto Insights (580K Subs)</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "Retention graphs went from a steep cliff at 0:30 to an almost flat line throughout. Their audio
+                      mixing and subtle sound-design cues kept viewers locked until the final CTA."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    Flatlined Retention Graph
+                  </span>
+                  <span>Audio Engineering</span>
+                </div>
+              </div>
+
+              <!-- Duplicate Review 6 -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-cyan-500/30 blur-xs"></div>
+                        <img src="assets/partners/tariq-vance.webp" alt="Tariq Vance"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Tariq Vance</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Founder &amp; Host, ZeroToScale</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "We tested 3 editing agencies before AUREX. None understood pacing and executive retention like
+                      this team. Our inbound sponsor rate tripled within 60 days of partnering."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    3x Sponsor Deal Inbound
+                  </span>
+                  <span>Executive Polish</span>
+                </div>
+              </div>
+
+              <!-- Duplicate Review 7 -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-rose-500/30 blur-xs"></div>
+                        <img src="assets/partners/scott-sterling.jpg" alt="Scott Sterling"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Scott Sterling
+                        </h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Hardware &amp; Tech Benchmarks (820K Subs)</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "Their 3D motion graphics and custom macro B-roll elevated our benchmark reviews into
+                      Apple-keynote caliber presentations. Absolute masters of visual retention."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    Keynote-Tier Motion VFX
+                  </span>
+                  <span>3D Benchmarks</span>
+                </div>
+              </div>
+
+              <!-- Duplicate Review 8 -->
+              <div class="partner-review-card shrink-0 p-5 sm:p-6 rounded-none flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-3 pb-3.5 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                      <div class="relative flex-shrink-0">
+                        <div class="absolute -inset-1 rounded-full bg-purple-500/30 blur-xs"></div>
+                        <img src="assets/partners/chloe-zhang.jpg" alt="Chloe Zhang"
+                          class="relative w-9 h-9 rounded-full object-cover border border-white/20 shadow-md">
+                      </div>
+                      <div>
+                        <h4 class="text-xs sm:text-sm font-bold text-white font-display leading-tight">Chloe Zhang</h4>
+                        <p class="text-[10px] text-gray-400 font-mono">Creator Economy &amp; Podcasting</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-[9px] font-mono text-[#FA6352] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#FA6352]/10 border border-[#FA6352]/30">Verified
+                      Partner</span>
+                  </div>
+
+                  <div class="quote-bubble p-4 sm:p-5 mt-4 rounded-none">
+                    <div class="flex text-[#FA6352] text-xs mb-2">★★★★★</div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                      "The short-form repurposing engine is insane. One 20-minute long-form episode yields 6 viral
+                      vertical cuts that consistently hit 500K+ views on Reels and TikTok."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-4 border-t border-white/10 mt-4 flex items-center justify-between text-[10px] font-mono text-gray-400">
+                  <span class="text-[#FA6352] font-semibold flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FA6352] inline-block animate-pulse"></span>
+                    500K+ Viral Short Cuts
+                  </span>
+                  <span>Omnichannel Engine</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PRODUCTION ARCHITECTURE SECTION ==================== -->
+    <section class="relative w-full py-8 sm:py-20 px-3 sm:px-6 lg:px-8 bg-transparent" id="production">
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-14">
+          <div
+            class="inline-flex items-center justify-center px-4 py-1.5 bg-black/90 border border-white/20 backdrop-blur-xl mb-3 sm:mb-4 shadow-[0_0_18px_rgba(250,99,82,0.15)]">
+            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-[#FA6352]">Production
+              Architecture</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+            What goes into <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FA6352] to-[#ff7160]">every
+              video we ship</span>
+          </h2>
+          <p class="mt-2 sm:mt-4 text-xs sm:text-lg text-gray-300 max-w-2xl mx-auto">
+            Three non-negotiable retention pillars engineered into every cut.
+          </p>
+        </div>
+
+        <!-- 3 Bento Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
+
+          <!-- Card 1: Hook -->
+          <div class="immersive-card p-5 sm:p-8 flex flex-col justify-between group">
+            <div class="hud-corner-tl"></div>
+            <div class="hud-corner-br"></div>
+
+            <div class="relative z-10">
+              <div
+                class="w-10 h-10 rounded-none bg-black border border-white/30 flex items-center justify-center text-[#FA6352] font-mono font-bold text-sm mb-5 shadow-lg group-hover:border-[#FA6352] transition-colors">
+                01
+              </div>
+              <h3
+                class="text-lg sm:text-2xl font-black text-white font-display mb-2 group-hover:text-[#FA6352] transition-colors">
+                Hook Architecture</h3>
+              <p class="text-xs sm:text-sm text-gray-300 leading-relaxed mb-6">
+                The first 3 seconds decide whether a viewer stays or swipes. We start with a high-impact pattern
+                interrupt, visual question, and sound riser that locks attention.
+              </p>
+            </div>
+
+            <div
+              class="relative z-10 pt-4 border-t border-white/15 text-[11px] font-mono text-[#FA6352] font-semibold flex items-center justify-between">
+              <span>Scroll-Stopping Visual Interrupt</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Story & Retention Flow -->
+          <div class="immersive-card p-5 sm:p-8 flex flex-col justify-between group">
+            <div class="hud-corner-tl"></div>
+            <div class="hud-corner-br"></div>
+
+            <div class="relative z-10">
+              <div
+                class="w-10 h-10 rounded-none bg-black border border-white/30 flex items-center justify-center text-[#FA6352] font-mono font-bold text-sm mb-5 shadow-lg group-hover:border-[#FA6352] transition-colors">
+                02
+              </div>
+              <h3
+                class="text-lg sm:text-2xl font-black text-white font-display mb-2 group-hover:text-[#FA6352] transition-colors">
+                Zero-Fat Story Flow</h3>
+              <p class="text-xs sm:text-sm text-gray-300 leading-relaxed mb-6">
+                We trim every microsecond of hesitation. Seamless match cuts, dynamic camera reframes, B-roll overlays,
+                and layered soundscapes keep dopamine constant.
+              </p>
+            </div>
+
+            <div
+              class="relative z-10 pt-4 border-t border-white/15 text-[11px] font-mono text-[#FA6352] font-semibold flex items-center justify-between">
+              <span>High-Retention Narrative Flow</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Conversion & Viral Payoff -->
+          <div class="immersive-card p-5 sm:p-8 flex flex-col justify-between group">
+            <div class="hud-corner-tl"></div>
+            <div class="hud-corner-br"></div>
+
+            <div class="relative z-10">
+              <div
+                class="w-10 h-10 rounded-none bg-black border border-white/30 flex items-center justify-center text-emerald-400 font-mono font-bold text-sm mb-5 shadow-lg group-hover:border-emerald-400 transition-colors">
+                03
+              </div>
+              <h3
+                class="text-lg sm:text-2xl font-black text-white font-display mb-2 group-hover:text-emerald-400 transition-colors">
+                Conversion Engine</h3>
+              <p class="text-xs sm:text-sm text-gray-300 leading-relaxed mb-6">
+                By the conclusion, your viewer is primed to take immediate action — subscribe, click the bio link, book
+                a sales call, or forward the video to their colleagues.
+              </p>
+            </div>
+
+            <div
+              class="relative z-10 pt-4 border-t border-white/15 text-[11px] font-mono text-emerald-400 font-semibold flex items-center justify-between">
+              <span>Direct-Response &amp; Viral Action</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== THE AUREX DIFFERENCE (COMPARISON MATRIX) ==================== -->
+    <section class="relative w-full py-8 sm:py-20 px-3 sm:px-6 lg:px-8 bg-transparent" id="why-us">
+      <div class="max-w-7xl mx-auto relative z-10">
+
+        <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-14">
+          <div
+            class="inline-flex items-center justify-center px-4 py-1.5 bg-black/90 border border-white/20 backdrop-blur-xl mb-3 sm:mb-4 shadow-[0_0_18px_rgba(250,99,82,0.15)]">
+            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-[#FA6352]">The AUREX
+              Difference</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+            Here's how we do <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FA6352] to-[#ff7160]">things
+              differently</span>
+          </h2>
+          <p class="mt-2 sm:mt-4 text-xs sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto">
+            Skip the nightmare of ghosting freelancers and slow corporate agency bureaucracies.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6 items-stretch">
+
+          <!-- Card 1: Random Freelancers -->
+          <div
+            class="relative p-5 sm:p-8 flex flex-col justify-between rounded-none bg-[#08080b]/90 border-2 border-white/15 hover:border-white/30 transition-all duration-300">
+            <div>
+              <div
+                class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-none bg-red-500/10 text-red-400 text-[10px] font-bold uppercase tracking-wider mb-4 border border-red-500/30">
+                <span>✕</span> Unreliable &amp; Sluggish
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2 font-display">Random Freelancers</h3>
+              <p class="text-xs text-gray-400 mb-5 leading-relaxed">Inconsistent output, unexpected ghosting, and zero
+                marketing strategy.</p>
+
+              <ul class="space-y-3 text-xs sm:text-sm text-gray-300">
+                <li class="flex items-start gap-2.5"><span class="text-red-400 font-bold">✕</span> Disappearing acts
+                  &amp; missed deadlines</li>
+                <li class="flex items-start gap-2.5"><span class="text-red-400 font-bold">✕</span> Zero understanding of
+                  viewer retention curves</li>
+                <li class="flex items-start gap-2.5"><span class="text-red-400 font-bold">✕</span> Requires constant
+                  babysitting and feedback loop</li>
+                <li class="flex items-start gap-2.5"><span class="text-red-400 font-bold">✕</span> Cannot handle 3D shot
+                  tracers, VFX, or audio mixing</li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/10 text-[11px] text-red-400 font-mono">
+              Low initial price, high hidden cost
+            </div>
+          </div>
+
+          <!-- Card 2: AUREX (Central Highlight) -->
+          <div
+            class="relative p-6 sm:p-10 flex flex-col justify-between rounded-none bg-[#0c0c10] border-2 border-[#FA6352] shadow-[0_0_50px_rgba(250,99,82,0.35)] hover:shadow-[0_0_70px_rgba(250,99,82,0.55)] transition-all duration-300 z-20">
+
+            <div
+              class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-none bg-[#FA6352] text-white text-[10px] font-black uppercase tracking-wider mb-4 shadow-md">
+              <span>★</span> Dedicated Growth Engine
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="w-10 h-10 rounded-none bg-black border border-[#FA6352] flex items-center justify-center p-1 shadow-md shrink-0">
+                  <img src="assets/logo-emblem.png" alt="AUREX" class="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <h3 class="text-2xl sm:text-3xl font-black text-white font-display">AUREX</h3>
+                  <p class="text-xs text-[#FA6352] font-bold">In-House Dedicated Partner</p>
+                </div>
+              </div>
+
+              <p class="text-xs sm:text-sm text-gray-200 mb-6 leading-relaxed">
+                Dedicated production firepower built specifically for channel velocity, retention psychology, and viral
+                scaling.
+              </p>
+
+              <ul class="space-y-3.5 text-xs sm:text-sm text-gray-100">
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span class="font-bold text-white">Seasoned editors, 3D motion artists &amp; sound designers</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span class="font-bold text-white">Blazing 24h – 48h turnaround on initial cuts</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span class="font-bold text-white">End-to-End: Hook Scripting, VFX, 3D Tracers &amp; SFX</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span class="font-bold text-white">Unlimited revisions until 100% satisfied</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span class="font-bold text-white">Direct Slack channel &amp; timestamped Frame.io reviews</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/20">
+              <a href="#order"
+                class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-none bg-white text-black font-extrabold text-xs uppercase tracking-wider hover:bg-[#FA6352] hover:text-white hover:border-[#FA6352] transition-colors shadow-lg border-2 border-white">
+                <span>Start Project Order</span>
+                <svg class="w-4 h-4 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Traditional Agencies -->
+          <div
+            class="relative p-5 sm:p-8 flex flex-col justify-between rounded-none bg-[#08080b]/90 border-2 border-white/15 hover:border-white/30 transition-all duration-300">
+            <div>
+              <div
+                class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-none bg-amber-500/10 text-amber-400 text-[10px] font-bold uppercase tracking-wider mb-4 border border-amber-500/30">
+                <span>✕</span> Bloated &amp; Bureaucratic
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2 font-display">Traditional Agencies</h3>
+              <p class="text-xs text-gray-400 mb-5 leading-relaxed">Bloated retainers, multiple account managers, and
+                glacial turnaround times.</p>
+
+              <ul class="space-y-3 text-xs sm:text-sm text-gray-300">
+                <li class="flex items-start gap-2.5"><span class="text-amber-400 font-bold">✕</span> $10k+/mo mandatory
+                  contracts with lock-in</li>
+                <li class="flex items-start gap-2.5"><span class="text-amber-400 font-bold">✕</span> Weeks of internal
+                  email chains for simple cuts</li>
+                <li class="flex items-start gap-2.5"><span class="text-amber-400 font-bold">✕</span> Work passed to
+                  inexperienced junior interns</li>
+                <li class="flex items-start gap-2.5"><span class="text-amber-400 font-bold">✕</span> Extra charges for
+                  every revision or thumbnail variant</li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/10 text-[11px] text-amber-400 font-mono">
+              Excess overhead, zero speed
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== INSTANT PROJECT BRIEFING & ORDER SECTION ==================== -->
+    <section class="relative w-full py-8 sm:py-24 px-3 sm:px-6 lg:px-8 bg-transparent overflow-hidden" id="order">
+      <div class="max-w-4xl mx-auto relative z-10">
+
+        <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-12">
+          <div
+            class="inline-flex items-center justify-center px-4 py-1.5 bg-black/90 border border-white/20 backdrop-blur-xl mb-3 sm:mb-4 shadow-[0_0_18px_rgba(250,99,82,0.15)]">
+            <span
+              class="text-[10px] sm:text-xs font-extrabold uppercase tracking-widest text-[#FA6352] font-display">Instant
+              Project Briefing</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+            Start your <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FA6352] to-[#ff7160]">project
+              order</span>
+          </h2>
+          <p class="mt-2 text-xs sm:text-base text-gray-300 max-w-2xl mx-auto">
+            Specify your video scope and channel goals below. Our production directors review your requirements and
+            begin immediately.
+          </p>
+        </div>
+
+        <!-- Order Form Card -->
+        <form id="orderFormCard"
+          class="relative rounded-none bg-[#08080b]/95 border border-white/20 hover:border-[#FA6352] hover:shadow-[0_0_45px_rgba(250,99,82,0.35)] shadow-[0_0_40px_rgba(0,0,0,0.95)] p-5 sm:p-10 space-y-6 sm:space-y-8 backdrop-blur-2xl transition-all duration-300 overflow-hidden">
+
+          <!-- Anti-Spam Honeypot (silent protection) -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off" />
+
+          <div id="orderScannerBeam"
+            class="absolute -top-full left-0 right-0 h-32 bg-gradient-to-b from-transparent via-[#FA6352]/25 to-transparent pointer-events-none opacity-0 z-20">
+          </div>
+
+          <div class="hud-corner-tl"></div>
+          <div class="hud-corner-br"></div>
+
+          <!-- Section 1: Contact -->
+          <div>
+            <h3
+              class="text-xs sm:text-sm font-bold text-white mb-3 pb-2 border-b border-white/15 font-display uppercase tracking-wider">
+              1. Contact &amp; Brand Information
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div>
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1 uppercase tracking-wider">Your Full
+                  Name *</label>
+                <input type="text" name="client_name" required
+                  class="w-full bg-[#0c0c10] border border-white/15 hover:border-[#FA6352]/50 focus:border-[#FA6352] focus:shadow-[0_0_15px_rgba(250,99,82,0.25)] p-3 text-white text-xs sm:text-sm outline-none rounded-none transition-all" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1 uppercase tracking-wider">Email Address
+                  *</label>
+                <input type="email" name="client_email" required
+                  class="w-full bg-[#0c0c10] border border-white/15 hover:border-[#FA6352]/50 focus:border-[#FA6352] focus:shadow-[0_0_15px_rgba(250,99,82,0.25)] p-3 text-white text-xs sm:text-sm outline-none rounded-none transition-all" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1 uppercase tracking-wider">WhatsApp /
+                  Telegram / Phone *</label>
+                <input type="text" name="contact_number" required
+                  class="w-full bg-[#0c0c10] border border-white/15 hover:border-[#FA6352]/50 focus:border-[#FA6352] focus:shadow-[0_0_15px_rgba(250,99,82,0.25)] p-3 text-white text-xs sm:text-sm outline-none rounded-none transition-all" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1 uppercase tracking-wider">Channel /
+                  Company URL</label>
+                <input type="text" name="channel_url"
+                  class="w-full bg-[#0c0c10] border border-white/15 hover:border-[#FA6352]/50 focus:border-[#FA6352] focus:shadow-[0_0_15px_rgba(250,99,82,0.25)] p-3 text-white text-xs sm:text-sm outline-none rounded-none transition-all" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Services -->
+          <div>
+            <div class="flex items-center justify-between mb-3 pb-2 border-b border-white/15">
+              <h3 class="text-xs sm:text-sm font-bold text-white font-display uppercase tracking-wider">
+                2. Select Services Needed
+              </h3>
+              <span id="estimatedTurnaroundBadge" class="text-[10px] font-mono text-[#FA6352] font-bold">Standard
+                Turnaround: 24–48 Hours</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <label class="service-checkbox-card">
+                <input type="checkbox" name="services[]" value="Video edit" class="rounded-none accent-[#FA6352]"
+                  checked />
+                <span>🎬 Video edit</span>
+              </label>
+
+              <label class="service-checkbox-card">
+                <input type="checkbox" name="services[]" value="Graphic Design and Thumbnail Design"
+                  class="rounded-none accent-[#FA6352]" checked />
+                <span>🎨 Graphic Design and Thumbnail Design</span>
+              </label>
+
+              <label class="service-checkbox-card">
+                <input type="checkbox" name="services[]" value="Web design" class="rounded-none accent-[#FA6352]" />
+                <span>💻 Web design</span>
+              </label>
+
+              <label class="service-checkbox-card">
+                <input type="checkbox" name="services[]" value="3d Design" class="rounded-none accent-[#FA6352]" />
+                <span>🧊 3d Design</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Section 3: Details & Links -->
+          <div>
+            <h3
+              class="text-xs sm:text-sm font-bold text-white mb-3 pb-2 border-b border-white/15 font-display uppercase tracking-wider">
+              3. Project Vision &amp; Footage Links
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1 uppercase tracking-wider">Project
+                  Concept / Raw Footage Details *</label>
+                <textarea name="project_description" required rows="3"
+                  placeholder="Tell us about the video concept, length, desired pacing style, and references..."
+                  class="w-full bg-[#0c0c10] border border-white/15 hover:border-[#FA6352]/50 focus:border-[#FA6352] focus:shadow-[0_0_15px_rgba(250,99,82,0.25)] p-3 text-white text-xs sm:text-sm outline-none rounded-none transition-all"></textarea>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1 uppercase tracking-wider">Drive /
+                  Dropbox / YouTube Reference Link</label>
+                <input type="text" name="reference_links" placeholder="https://drive.google.com/... or dropbox link"
+                  class="w-full bg-[#0c0c10] border border-white/15 hover:border-[#FA6352]/50 focus:border-[#FA6352] focus:shadow-[0_0_15px_rgba(250,99,82,0.25)] p-3 text-white text-xs sm:text-sm outline-none rounded-none transition-all font-mono" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-4 border-t border-white/15 flex flex-col sm:flex-row items-center justify-end gap-4">
+            <button type="submit"
+              class="w-full sm:w-auto px-8 py-4 rounded-none bg-[#FA6352] text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider hover:bg-[#ff7160] transition-all shadow-[0_0_30px_rgba(250,99,82,0.4)] border-2 border-[#FA6352] cursor-pointer">
+              Submit Project Order ➔
+            </button>
+          </div>
+
+          <!-- Status Toast -->
+          <div id="orderStatusToast"
+            class="hidden p-4 rounded-none bg-emerald-500/20 border-2 border-emerald-400 text-emerald-300 text-xs sm:text-sm font-bold text-center">
+            ✓ Order Received! An AUREX executive producer will contact your team via WhatsApp &amp; Email within 2
+            hours.
+          </div>
+
+          <!-- Error Toast -->
+          <div id="orderErrorToast"
+            class="hidden p-4 rounded-none bg-red-500/20 border-2 border-red-500 text-red-200 text-xs sm:text-sm font-bold text-center">
+            ✕ <span id="orderErrorMessage">Transmission Failed. Please check your connection and try again.</span>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION SECTION ==================== -->
+    <section class="relative w-full py-8 sm:py-20 px-3 sm:px-6 lg:px-8 bg-transparent" id="faq">
+      <div class="max-w-4xl mx-auto relative z-10">
+
+        <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-14">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-none bg-black border border-white/20 backdrop-blur-xl mb-3 shadow-[0_0_20px_rgba(250,99,82,0.15)]">
+            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-[#FA6352]">Got
+              Questions?</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+            Frequently Asked <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FA6352] to-[#ff7160]">Questions</span>
+          </h2>
+        </div>
+
+        <div class="space-y-3">
+
+          <div
+            class="faq-item rounded-none bg-[#08080b]/90 border-2 border-white/15 hover:border-[#FA6352]/50 backdrop-blur-xl overflow-hidden transition-all duration-300">
+            <button
+              class="faq-trigger w-full px-4 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between text-xs sm:text-base font-bold text-white font-display">
+              <span>How fast is the turnaround on videos and thumbnails?</span>
+              <div
+                class="faq-icon w-6 h-6 rounded-none bg-white/5 border border-white/20 flex items-center justify-center text-gray-300 transition-transform duration-300">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div
+                class="px-4 pb-4 sm:px-6 sm:pb-6 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-white/10 pt-3">
+                Thumbnail revisions are turned around in under 12–24 hours. Full YouTube long-form videos and sports
+                vlogs receive initial cuts in 24 to 48 hours. Because AUREX runs an in-house dedicated team, you avoid
+                unpredictable delays.
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="faq-item rounded-none bg-[#08080b]/90 border-2 border-white/15 hover:border-[#FA6352]/50 backdrop-blur-xl overflow-hidden transition-all duration-300">
+            <button
+              class="faq-trigger w-full px-4 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between text-xs sm:text-base font-bold text-white font-display">
+              <span>How do revisions work?</span>
+              <div
+                class="faq-icon w-6 h-6 rounded-none bg-white/5 border border-white/20 flex items-center justify-center text-gray-300 transition-transform duration-300">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div
+                class="px-4 pb-4 sm:px-6 sm:pb-6 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-white/10 pt-3">
+                We provide unlimited revisions until you are 100% satisfied. Reviewing is seamless via Frame.io,
+                allowing you to click directly on frames to leave timestamped notes.
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="faq-item rounded-none bg-[#08080b]/90 border-2 border-white/15 hover:border-[#FA6352]/50 backdrop-blur-xl overflow-hidden transition-all duration-300">
+            <button
+              class="faq-trigger w-full px-4 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between text-xs sm:text-base font-bold text-white font-display">
+              <span>Who owns the project files and source assets?</span>
+              <div
+                class="faq-icon w-6 h-6 rounded-none bg-white/5 border border-white/20 flex items-center justify-center text-gray-300 transition-transform duration-300">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div
+                class="px-4 pb-4 sm:px-6 sm:pb-6 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-white/10 pt-3">
+                You own 100% of everything upon delivery. Premiere Pro / After Effects project files, PSD thumbnails,
+                Blender 3D files, and 4K master files are all transferred without licensing fees.
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="faq-item rounded-none bg-[#08080b]/90 border-2 border-white/15 hover:border-[#FA6352]/50 backdrop-blur-xl overflow-hidden transition-all duration-300">
+            <button
+              class="faq-trigger w-full px-4 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between text-xs sm:text-base font-bold text-white font-display">
+              <span>Can you handle 3D shot tracers, map flyovers, and custom VFX?</span>
+              <div
+                class="faq-icon w-6 h-6 rounded-none bg-white/5 border border-white/20 flex items-center justify-center text-gray-300 transition-transform duration-300">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div
+                class="px-4 pb-4 sm:px-6 sm:pb-6 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-white/10 pt-3">
+                Yes! We specialize in complex 3D camera tracking, golf shot tracers, topographic course maps, 3D product
+                modeling, and kinetic motion graphics as featured in our portfolio.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PRE-FOOTER VIP CTA ==================== -->
+    <section class="relative w-full py-10 sm:py-16 px-3 sm:px-6 lg:px-8 bg-transparent">
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <div
+          class="relative p-6 sm:p-14 rounded-none bg-[#0c0c10] border-2 border-white/20 shadow-[0_20px_70px_rgba(0,0,0,0.98)] hover:border-[#FA6352] text-center overflow-hidden transition-all duration-500">
+          <div
+            class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FA6352] to-transparent pointer-events-none">
+          </div>
+
+          <div class="max-w-3xl mx-auto relative z-10">
+            <div
+              class="inline-flex items-center justify-center px-4 py-1.5 rounded-none bg-white/10 border border-white/25 backdrop-blur-md mb-4 text-center">
+              <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-white text-center">Accepting 3
+                New Channels This Month</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-5xl font-black text-white tracking-tight font-display">
+              Ready to scale your content <br class="hidden sm:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FA6352] to-[#ff7160]">to the
+                next level with AUREX?</span>
+            </h2>
+
+            <p class="mt-3 text-xs sm:text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
+              Drop your email below for an instant project review, or start your order immediately.
+            </p>
+
+            <form id="footerDirectTouchForm" class="mt-6 sm:mt-8 max-w-xl mx-auto text-left space-y-3">
+              <!-- Anti-Spam Honeypot (silent protection) -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off" />
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[10px] font-bold uppercase text-gray-300 mb-1">Email Address *</label>
+                  <input type="email" name="email" required placeholder="yourname@domain.com"
+                    class="w-full px-3 py-2.5 bg-[#08080b] border border-white/25 text-white text-xs outline-none focus:border-[#FA6352]" />
+                </div>
+                <div>
+                  <label class="block text-[10px] font-bold uppercase text-gray-300 mb-1">Channel / Name</label>
+                  <input type="text" name="channel_name" placeholder="e.g. YouTube Channel / Brand"
+                    class="w-full px-3 py-2.5 bg-[#08080b] border border-white/25 text-white text-xs outline-none focus:border-[#FA6352]" />
+                </div>
+              </div>
+              <button type="submit" id="quickSubmitBtn"
+                class="w-full py-3.5 bg-[#FA6352] text-white font-extrabold text-xs uppercase tracking-wider hover:bg-[#ff7160] transition-colors border-2 border-[#FA6352] shadow-lg cursor-pointer">
+                Send Direct Inquiry ➔
+              </button>
+              <div id="quickFormStatus" class="hidden"></div>
+            </form>
+
+            <div class="mt-6 pt-6 border-t border-white/15 flex flex-wrap items-center justify-center gap-4">
+              <a href="#order" class="aurex-btn aurex-btn-primary">
+                <span>Start Project Order</span>
+              </a>
+              <a href="#portfolio" class="aurex-btn aurex-btn-secondary">
+                <span>View Full Portfolio</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER (XOT Studio Minimalist Style) ==================== -->
+  <footer id="siteFooter"
+    class="aurex-xot-footer relative w-full bg-[#030206] overflow-hidden select-none border-t border-white/10">
+    <!-- Subtle ambient glow matching Aurex brand aesthetics -->
+    <div
+      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] sm:w-[1000px] h-[300px] bg-[radial-gradient(ellipse_at_bottom,_rgba(250,99,82,0.06)_0%,_transparent_70%)] pointer-events-none z-0">
+    </div>
+
+    <div
+      class="relative z-10 w-full max-w-[1700px] mx-auto px-4 sm:px-8 lg:px-12 pt-16 sm:pt-24 pb-8 sm:pb-12 flex flex-col justify-between min-h-[360px] sm:min-h-[460px]">
+
+      <!-- Top: Giant Typography with XOT Pop-up Spring Animation -->
+      <div class="xot-footer-top w-full flex-1 flex items-center justify-center overflow-hidden py-10 sm:py-16">
+        <div class="xot-footer-mask overflow-hidden w-full flex justify-center">
+          <h1 class="xot-footer-title" id="xotFooterTitle" aria-label="AUREX">
+            <span class="xot-letter" style="--i: 0">A</span>
+            <span class="xot-letter" style="--i: 1">U</span>
+            <span class="xot-letter" style="--i: 2">R</span>
+            <span class="xot-letter" style="--i: 3">E</span>
+            <span class="xot-letter" style="--i: 4">X</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- Bottom: Minimalist Actions Bar (Email on Left, Back to Top on Right) -->
+      <div
+        class="xot-footer-bottom w-full pt-8 sm:pt-10 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-4 text-xs font-mono">
+        <!-- Left: Email Only -->
+        <div class="flex items-center justify-center sm:justify-start">
+          <a href="mailto:aurexmedia96@gmail.com" class="xot-footer-link lowercase text-white/80 hover:text-white"
+            aria-label="Send email to aurexmedia96@gmail.com">
+            <span>aurexmedia96@gmail.com</span>
+            <span class="xot-link-line" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <!-- Hidden triggers for Privacy & Terms modals -->
+        <div class="hidden">
+          <button type="button" id="openPrivacyModal">Privacy Policy</button>
+          <button type="button" id="openTermsModal">Terms of Service</button>
+        </div>
+
+        <!-- Right: Back To Top Button -->
+        <div class="flex items-center justify-center sm:justify-end">
+          <button type="button" id="xotBackToTop" class="xot-footer-link uppercase tracking-widest cursor-pointer group"
+            aria-label="Scroll back to top of page">
+            <span>BACK TO TOP</span>
+            <span
+              class="text-[#FA6352] text-sm leading-none transition-transform duration-300 group-hover:-translate-y-1 inline-block">&uarr;</span>
+            <span class="xot-link-line" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== VIDEO MODAL PLAYER ==================== -->
+  <div id="videoModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header flex items-center justify-between gap-3">
+        <!-- Direct External Links (YouTube) -->
+        <div class="flex items-center gap-2 sm:gap-3 flex-wrap min-w-0" id="modalVideoHeaderInfo" style="display: none;">
+          <a id="modalYouTubeLink" href="#" target="_blank" rel="noopener noreferrer"
+            class="hidden items-center gap-1.5 px-3 py-1 bg-red-600 hover:bg-red-500 text-white font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider transition-all shadow-md shrink-0">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>Watch on YouTube ↗</span>
+          </a>
+        </div>
+
+        <button id="closeVideoModal"
+          class="px-3 py-1 bg-white text-black hover:bg-red-600 hover:text-white font-extrabold text-[10px] uppercase tracking-wider transition-colors border border-white cursor-pointer ml-auto shrink-0">
+          Close ✕
+        </button>
+      </div>
+
+      <div class="relative w-full aspect-video bg-black flex items-center justify-center transition-all duration-300 overflow-hidden"
+        id="modalVideoWrapper">
+        <video id="modalVideoPlayer" class="w-full h-full object-contain" controls playsinline>
+          Your browser does not support HTML5 video playback.
+        </video>
+        <iframe id="modalYouTubePlayer" class="w-full h-full hidden" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== IMAGE LIGHTBOX MODAL ==================== -->
+  <div id="imageModal" class="modal-overlay">
+    <div class="modal-box max-w-5xl">
+      <div class="modal-header justify-end">
+        <div class="hidden items-center gap-2" id="imageModalHeaderInfo" style="display: none !important;">
+          <span class="w-2 h-2 rounded-none bg-[#FA6352] animate-pulse"></span>
+          <span id="lightboxTitle" class="text-xs font-bold text-white font-display"></span>
+        </div>
+        <button id="closeImageModal"
+          class="px-3 py-1 bg-white text-black hover:bg-red-600 hover:text-white font-extrabold text-[10px] uppercase tracking-wider transition-colors border border-white">
+          Close ✕
+        </button>
+      </div>
+
+      <div class="relative w-full aspect-video bg-black flex items-center justify-center p-2">
+        <img id="lightboxImg" src="" alt="AUREX Thumbnail" class="w-full h-full object-contain" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PRIVACY POLICY MODAL ==================== -->
+  <div id="privacyModal"
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+    <div
+      class="relative w-full max-w-2xl bg-[#08080b] border-2 border-white/30 rounded-none p-6 sm:p-8 max-h-[85vh] overflow-y-auto text-gray-300 shadow-2xl">
+      <button id="closePrivacyModal" class="absolute top-5 right-5 text-gray-400 hover:text-white text-sm font-bold">✕
+        Close</button>
+      <h3 class="text-xl font-bold text-white mb-4 font-display">Privacy Policy</h3>
+      <div class="space-y-3 text-xs sm:text-sm leading-relaxed text-gray-400">
+        <p>At AUREX, your creative privacy and brand safety are our highest priorities.</p>
+        <p>All video footage, thumbnail assets, scripts, and production files shared with us remain strictly
+          confidential under non-disclosure standards.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TERMS OF SERVICE MODAL ==================== -->
+  <div id="termsModal"
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+    <div
+      class="relative w-full max-w-2xl bg-[#08080b] border-2 border-white/30 rounded-none p-6 sm:p-8 max-h-[85vh] overflow-y-auto text-gray-300 shadow-2xl">
+      <button id="closeTermsModal" class="absolute top-5 right-5 text-gray-400 hover:text-white text-sm font-bold">✕
+        Close</button>
+      <h3 class="text-xl font-bold text-white mb-4 font-display">Terms of Service</h3>
+      <div class="space-y-3 text-xs sm:text-sm leading-relaxed text-gray-400">
+        <p>All video and thumbnail deliverables transfer 100% full copyright and commercial usage rights upon project
+          completion.</p>
+        <p>Revisions are conducted until customer satisfaction within the outlined project parameters.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- GSAP Animation Engine (Local High-Performance with CDN Fallback) -->
+  <script src="assets/gsap.min.js"></script>
+  <script>
+    if (typeof gsap === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- Application Logic -->
+  <script src="app.js?v=5.6"></script>
+
+  <!-- XOT Minimalist Ending Section (Spring Pop-up & Back To Top) -->
+  <script>
+    (function () {
+      function initXotFooter() {
+        var footer = document.getElementById('siteFooter');
+        var footerTitle = document.getElementById('xotFooterTitle');
+        var backToTopBtn = document.getElementById('xotBackToTop');
+
+        if (backToTopBtn) {
+          backToTopBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          });
+        }
+
+        if (footer && footerTitle) {
+          if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  footerTitle.classList.add('is-visible');
+                } else {
+                  footerTitle.classList.remove('is-visible');
+                }
+              });
+            }, {
+              threshold: 0.12,
+              rootMargin: '0px 0px -20px 0px'
+            });
+            observer.observe(footer);
+          } else {
+            footerTitle.classList.add('is-visible');
+          }
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initXotFooter);
+      } else {
+        initXotFooter();
+      }
+    })();
+  </script>
+</body>
+
+</html>

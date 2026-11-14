@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 28" fill="currentColor">
+  <circle cx="14" cy="14" r="11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <path d="M9 9.5h10M9 14h7M9 19v-9.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <text x="32" y="19" font-family="'Montserrat', sans-serif" font-weight="800" font-size="14" letter-spacing="0.02em">frame.io</text>
+</svg>
